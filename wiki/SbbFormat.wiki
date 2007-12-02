@@ -1,0 +1,32 @@
+#summary One-sentence summary of this page.
+
+= Formato fichero sbb =
+
+Add your content here.
+
+
+= Cabecera =
+
+||---||nombre|| type||
+||0-2 ||sbb_version|| char||
+||3-7 ||maquina || char||
+||8-15 || nombre || char||
+||16 || caux|| char||
+||17 || tipo|| char||
+||18 || n_blocks|| char||
+||19 -20|| clear || char||
+||21 -22 || n_usr|| char||
+                   
+= Bloques =
+
+
+||0-15||nombre|| type||
+||16-17||blockname|| short ||
+||18-19||ini|| short ||
+||20-21||size|| short ||
+||22-23||param3|| short ||
+||24-25||exec|| short ||
+||26||type|| char||
+||27||chksum|| char||
+||27-n+28||data || char||
+
