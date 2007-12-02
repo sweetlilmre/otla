@@ -9,6 +9,10 @@ Add your content here.
 
 formato cabecera
 
+
+
+= Cabecera2 =
+
 ||---||nombre|| type||
 ||0-2 ||sbb_version|| char(3)||
 ||3-7 ||maquina || char(5)||
