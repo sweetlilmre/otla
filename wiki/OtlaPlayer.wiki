@@ -7,14 +7,14 @@ Add your content here.
 
 = Details =
 
-OtlaPlayer.exe covierte un fichero .sbb (SbbFormat) , que contiene la información del programa original, a un fichero wav que representa una señal de audio que la vieja computadora será capaz de interpretar.
+ OtlaPlayer.exe covierte un fichero .sbb (SbbFormat) , que contiene la información del programa original, a un fichero wav que representa una señal de audio que la vieja computadora será capaz de interpretar.
 
-Típicamente la señal de audio tiene la siguiente estructura.
+ Típicamente la señal de audio tiene la siguiente estructura.
 
  Una primera parte es un programa que se carga según la norma de la rutina de carga standard de cada maquina.
  El programa no es otra cosa que un cargador con rutina de carga especial. Además de la  propia rutina de carga se pueden modificar algunos parametros (CLEAR , SP, POKE-1 ,..)
 
-Una vez la rutina de carga está en memoria comienza la carga de uno o varios bloques de _datos. Es una carga a alta velocidad. No hay silencios.
+ Una vez la rutina de carga está en memoria comienza la carga de uno o varios bloques de _datos. Es una carga a alta velocidad. No hay silencios.
 
 
 
