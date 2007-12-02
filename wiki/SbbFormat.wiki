@@ -28,4 +28,4 @@ Add your content here.
 ||22..23||exec|| short ||
 ||24||type|| char||
 ||25||chksum|| char||
-||26..size+28||data || char [size]||
+||26..size+28||data || char (size)||
