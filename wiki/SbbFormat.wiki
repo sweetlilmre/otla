@@ -8,24 +8,24 @@ Add your content here.
 = Cabecera =
 
 ||---||nombre|| type||
-||0-2 ||sbb_version|| char||
-||3-7 ||maquina || char||
-||8-15 || nombre || char||
+||0-2 ||sbb_version|| char[3]||
+||3-7 ||maquina || char[5]||
+||8..15 || nombre || char[16]||
 ||16 || caux|| char||
 ||17 || tipo|| char||
 ||18 || n_blocks|| char||
-||19 -20|| clear || char||
-||21 -22 || n_usr|| char||
+||19..20|| clear || short ||
+||21..22 || n_usr|| short ||
                    
 = Bloques =
 
 
 ||     ||nombre|| type||
-||0-15||blockname|| short ||
-||16-17||ini|| short ||
-||18-19||size|| short ||
-||20-21||param3|| short ||
-||22-23||exec|| short ||
+||0..15||blockname|| char [16] ||
+||16..17||ini|| short ||
+||18..19||size|| short ||
+||20..21||param3|| short ||
+||22..23||exec|| short ||
 ||24||type|| char||
 ||25||chksum|| char||
-||26-n+28||data || char||
+||26..size+28||data || char [size]||
