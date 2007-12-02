@@ -13,3 +13,72 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
+
+                                                           
+                                             
+
+		Proyecto O.T.L.A.
+
+EL proyecto OTLA ofrece una alternativa a la obsoleta cinta de cassette para cargar programas en las viejas computadoras de los años 80 basadas en el microporecsador Z80 (ZX Spectrum , CPC Amstrad y MSX) utilizando modernos reproductores de audio digitales.
+
+Para la carga de programas se procede como normalmente (load"",etc) pero en lugar de conectar un reproductor de cassette a la vieja computadora se conecta un reproductor de CD, MP3, la tarjeta de sonido de un PC, etc. No se necesita de ningún dispositivo adicional  y la carga será considerable más rápida que las cargas con cassette de la época.
+
+
+	OtlaPlayer
+
+OtlaPlayer.exe covierte un fichero .sbb , que contiene la información del programa original, a un fichero wav que representa una señal de audio que la vieja computadora será capaz de interpretar.
+
+Típicamente la señal de audio tiene la siguiente estructura.
+
+Una primera parte es un programa que se carga según la norma de la rutina de carga standard de cada maquina.
+El programa no es otra cosa que un cargador con rutina de carga especial. Además de la propia rutina de carga se pueden modificar algunos parametros (CLEAR , SP, POKE-1 ,..)
+
+Una vez la rutina de carga está en memoria comienza la carga de uno o varios bloques de datos. Es una carga a alta velocidad. No hay silencios.
+
+
+
+Opciones del cargador
+
+Generar cargador. El wav empieza con la señal de audio correspondiente al cargador. Si no se activa solo se guardarán en el wav la señal correspondiente a los bloques de alta velocidad. (esto puede resultar útil en el caso de que el cargador esté ya en memoria)
+
+Acelerar cargador. La norma de carga standard de cada maquina especifica una duración del tono guia. Esa duración se puede acortar hasta cierto límite y la carga standar seguirá funcinando sin problemas. (se pueden ahorrar nos cuantos segundos de carga)
+
+Parar ente error de carga. La carga de los bloques de alta velocidad incluye un control de checksum para cada bloque. En caso de error la carga se para (loading error). Este parón se puede desactivar con la esperanza de que algún pequeño error de carga no impida el programa que se pretende cargar pueda llegar a funcionar.
+
+Habilitar las interrupciones entre bloques. Antes de empezar la carga de un bloque se deshabilitan las interrupciones. Cuando acaba la carga del bloque se vuelven a habilitar. Esto ultimo se puede evitar. 
+
+Activar relé motor Las maquinas msx y cpc disponen de un relé para activar o parar el relé del motor del reproductor de cassete. Con los reproducotres digitales esto no es necesario pero los emuladores requieren activar esta opción
+
+Reubicar. La rutina de carga se ubica en lugares diferentes para cada maquina.
+ZX  $ff58  (zona de GDU)
+CPC $ff10  (parte final de pantalla)
+MSX $f430  (buffer del teclado)
+Para CPC y MSX se pueden dar ubicaciones alternativas dando otro valor al byte más significativo 
+
+
+Opciones del wav
+
+Pausa entre bloques
+Entre la carga de bloques de alta velocidad no hay propiamente pausas sino tono guia de alta frecuencia de mayor o menor duración. En el caso de carga de un bloque con dirección de ejecución (pero que no es ultimo bloque que se debe cargar, por ejemplo un bloque que se autodescomprime) el tiempo del tono debe ser mayor que el tiempo que llevará la descompresión para que en el retorno a la carga del siguiente bloque el tono guia siga presente
+
+Invertir polaridad
+La carga debería ser correcta para cualquier polaridad. Sin embargo para cargas a las velocidades más altas y dependiendo de la forma de onda una polaridad puede funcionar mejor que su inversa.
+
+Forma de onda
+Lo mismo se puede decir de la forma de onda. Cuando se intentan velocidad más altas la forma de onda es clave para conseguir una carga correcta
+
+Frecuencia de muestreo
+Los ficheros wavs se pueden generar con distintas frecuencias de muestreo (44100 o 48000). Se debe elegir la frecuencia que utliza el reproductor de audio digital. Por ejemplo, un reproductor de CD utiliza 44100. Las tarjetas de sonido antiguas 44100. algunas modernas 48000.
+
+
+Muestras por bit (velocidad)
+La rutina de cargas puede funcionar a distintas velocidades.
+
+
+El ajuste tipico: forma de onda cubica, 44100 hz de frecuencia de muestreo y 3,5 samples /bit (12600 bps) 
+
+
+
+	otlaBuilder
+
+Todo esto está muy bien pero ¿de donde saco los ficheros *.sbb para convertirlos a una señal de audio?
