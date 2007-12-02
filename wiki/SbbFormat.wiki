@@ -8,9 +8,9 @@ Add your content here.
 = Cabecera =
 
 ||---||nombre|| type||
-||0-2 ||sbb_version|| char[3]||
-||3-7 ||maquina || char[5]||
-||8..15 || nombre || char[16]||
+||0-2 ||sbb_version|| char(3)||
+||3-7 ||maquina || char(5)||
+||8..15 || nombre || char(16)||
 ||16 || caux|| char||
 ||17 || tipo|| char||
 ||18 || n_blocks|| char||
@@ -21,7 +21,7 @@ Add your content here.
 
 
 ||     ||nombre|| type||
-||0..15||blockname|| char [16] ||
+||0..15||blockname|| char (16) ||
 ||16..17||ini|| short ||
 ||18..19||size|| short ||
 ||20..21||param3|| short ||
