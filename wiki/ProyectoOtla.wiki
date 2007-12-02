@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+pagina de incio 
 
 = Introduction =
 
@@ -13,9 +13,9 @@ Add your content here.  Format your content with:
   * Automatic links to other wiki pages
 
 
-		Proyecto O.T.L.A.
+=		Proyecto O.T.L.A. =
 
-EL proyecto OTLA ofrece una alternativa a la obsoleta cinta de cassette para cargar programas en las viejas computadoras de los años 80 basadas en el microporecsador Z80 (ZX Spectrum , CPC Amstrad y MSX) utilizando modernos reproductores de audio digitales.
+EL proyecto OTLA ofrece una alternativa a la obsoleta cinta de cassette para cargar programas en las viejas computadoras de los años 80 basadas en el microporecsador Z80 (*ZX* Spectrum , *CPC* Amstrad y *MSX*) utilizando modernos reproductores de audio digitales.
 
 Para la carga de programas se procede como normalmente (load"",etc) pero en lugar de conectar un reproductor de cassette a la vieja computadora se conecta un reproductor de CD, MP3, la tarjeta de sonido de un PC, etc. No se necesita de ningún dispositivo adicional  y la carga será considerable más rápida que las cargas con cassette de la época.
 
