@@ -14,7 +14,7 @@ Add your content here.
  Una primera parte es un programa que se carga según la norma de la rutina de carga standard de cada maquina.
  El programa no es otra cosa que un cargador con rutina de carga especial. Además de la  propia rutina de carga se pueden modificar algunos parametros (CLEAR , SP, POKE-1 ,..)
 
- Una vez la rutina de carga está en memoria comienza la carga de uno o varios bloques de _datos. Es una carga a alta velocidad. No hay silencios.
+ Una vez la rutina de carga está en memoria comienza la carga de uno o varios bloques de datos. Es una carga a alta velocidad. No hay silencios.
 
 
 
