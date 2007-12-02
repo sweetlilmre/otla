@@ -7,6 +7,8 @@ Add your content here.
 
 = Cabecera =
 
+formato cabecera
+
 ||---||nombre|| type||
 ||0-2 ||sbb_version|| char(3)||
 ||3-7 ||maquina || char(5)||
@@ -19,6 +21,7 @@ Add your content here.
                    
 = Bloques =
 
+formato bloques
 
 ||     ||nombre|| type||
 ||0..15||blockname|| char (16) ||
