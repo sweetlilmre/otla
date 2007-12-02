@@ -1,0 +1,30 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+
+
+Los progrmas que en su día se almacenaban en cintas de cassette, discos de 3" o cartchos rom se puden enontrar hoy en dia en ficheros que se pueden descargar de internet. 
+
+
+Machine
+
+Name 
+tipo
+usr
+clear
+poke
+
+ini
+size 
+exec
