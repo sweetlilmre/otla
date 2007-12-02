@@ -22,10 +22,10 @@ Add your content here.
 
 ||     ||nombre|| type||
 ||0-15||blockname|| short ||
-||18-19||ini|| short ||
-||20-21||size|| short ||
-||22-23||param3|| short ||
-||24-25||exec|| short ||
-||26||type|| char||
-||27||chksum|| char||
+||16-17||ini|| short ||
+||18-19||size|| short ||
+||20-21||param3|| short ||
+||22-23||exec|| short ||
+||24-25||type|| short ||
+||26||chksum|| char||
 ||27-n+28||data || char||
