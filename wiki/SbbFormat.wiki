@@ -18,7 +18,8 @@ formato cabecera
 ||18 || n_blocks|| char||
 ||19..20|| clear || short ||
 ||21..22 || n_usr|| short ||
-                   
+           
+        
 = Bloques =
 
 formato bloques
