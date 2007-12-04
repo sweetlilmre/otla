@@ -1,6 +1,10 @@
 =Señal de audio =
 
-La señal de audio tiene esta forma:
+La señales de audio qeu amneja el ProyectoOtla son señales audio mono con frecuqncias de muestreo 44100 Hz o 48000 Hz.
+
+Se pueden emplear difentes formas de onda (WavForms)
+
+Y tiene la siguiente estructura:
 
 [http://personal.auna.com/casariche/otla/signal.png]
 
