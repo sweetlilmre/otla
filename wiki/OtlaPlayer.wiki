@@ -7,7 +7,7 @@ Add your content here.
 
 = Details =
 
- OtlaPlayer.exe covierte un fichero .sbb (SbbFormat) , que contiene la información del programa original, a un fichero wav que representa una señal de audio que la vieja computadora será capaz de interpretar.
+ OtlaPlayer.exe covierte un fichero .sbb (SbbFormat) , que contiene la información del programa original, a un fichero wav (con esta especificación: DefinicionAudio  ) que la vieja computadora será capaz de interpretar.
 
  Típicamente la señal de audio tiene la siguiente estructura.
 
