@@ -33,9 +33,9 @@
 *Reubicar.* 
  La rutina de carga se ubica en lugares diferentes para cada maquina.
  ubicaciones por defecto 
- *ZX*  $ff58  (zona de GDU)
- *CPC* $ff10  (parte final de pantalla)
- *MSX* $f430  (buffer del teclado)
+ *ZX  $ff58  (zona de GDU)
+ *CPC $ff10  (parte final de pantalla)
+ *MSX $f430  (buffer del teclado)
  Para CPC y MSX se pueden dar ubicaciones alternativas dando otro valor al byte más significativo 
 
 
