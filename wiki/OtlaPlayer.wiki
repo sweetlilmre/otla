@@ -1,11 +1,6 @@
-#summary One-sentence summary of this page.
+#crea ficheros wav
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
+= El reproductor otla =
 
  El ejecutanble otlaPlayer.exe covierte un fichero .sbb (SbbFormat) , que contiene la información del programa original, a un fichero wav (con esta especificación: DefinicionAudio  ) que la vieja computadora será capaz de interpretar.
 
