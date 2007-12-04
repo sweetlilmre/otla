@@ -1,6 +1,6 @@
 =Señal de audio =
 
-
+[http://personal.auna.com/casariche/otla/signal.png]
 
 *Tono guia*
  Al menos 12 ciclos de 18 muestras (es decir , un tono de 2450 Hz cuando la frecuencia de muestreo es de 44100 HK o 2666 Hz para una frecuencia de muestreo de 48000)
