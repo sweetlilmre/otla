@@ -47,7 +47,7 @@ Para CPC y MSX se pueden dar ubicaciones alternativas dando otro valor al byte m
  La carga debería ser correcta para cualquier polaridad. Sin embargo para cargas a las velocidades más altas y dependiendo de la forma de onda una polaridad puede funcionar mejor que su inversa.
 
 *Forma de onda*
- Lo mismo se puede decir de la forma de onda. Cuando se intentan velocidad más altas la forma de onda es clave para conseguir una carga correcta
+ Lo mismo se puede decir de la forma de onda (WavForms). Cuando se intentan velocidad más altas la forma de onda es clave para conseguir una carga correcta
 
 *Frecuencia de muestreo*
  Los ficheros wavs se pueden generar con distintas frecuencias de muestreo (44100 o 48000). Se debe elegir la frecuencia que utliza el reproductor de audio digital. Por ejemplo, un reproductor de CD utiliza 44100. Las tarjetas de sonido antiguas 44100. algunas modernas 48000.
