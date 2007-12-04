@@ -5,7 +5,7 @@
 *Tono guia*
  Al menos 12 ciclos de 18 muestras (es decir , un tono de 2450 Hz cuando la frecuencia de muestreo es de 44100 HK o 2666 Hz para una frecuencia de muestreo de 48000)
 
-
+ 
 *Pulso de sincronismo*
 
  Formado por un pulso negativo de 4 muestras y un pulso positivo de 2 muestras. (fundamental para detectar la polaridad)
@@ -13,46 +13,45 @@
 
 *Ciclo postsincromismo*
 
-Un ciclo de 6 muestras
+ Un ciclo de 6 muestras
 
-Checksum + n bytes de datos
+*Checksum + N bytes de datos*
 
-4*(1+n) ciclos. Cada ciclo codifica una pareja de bits (símbolo) según esta tabla
+ 4(1+n) ciclos. Cada ciclo codifica una pareja de bits (símbolo) según esta tabla
 
-'00' ciclo de x muestras
+  '00' ciclo de x muestras
+ 
+  '01' ciclo de x+d muestras
 
-'01' ciclo de x+d muestras
+  '10' ciclo de x+2d muestras
 
-'10' ciclo de x+2*d muestras
+  '11' ciclo de x+3d muestras
 
-'11' ciclo de x+3*d muestras
+ donde x puede ser 2 muestras o más
+ Y d puede ser una diferencia entre simbolos de 1 ó 2
 
-donde x puede ser 2 muestras o más
-Y d puede ser una diferencia entre simbolos de 1 ó 2
+ x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad (bit por segundo)
 
-x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad (bit por segundo)
-
-velocidad = f/ ((2*x+3*d)/2)
-
-
-
-Cuatro símbolos codifican un byte siendo el símbolo que se trasmite en primer lugar el de mayor peso. Checksum es XOR de los n bytes de datos
+  velocidad = f / ((2x+3d)/2)
 
 
-Ciclos de fin de trasmision
 
-Cuatro ciclos con las siguientes duraciones
-
-1er ciclo 11 muestras
-
-2º ciclo 12 muestras
-
-3º ciclo 13 muestras
-
-4º ciclo 16 muestras
+ Cuatro símbolos codifican un byte siendo el símbolo que se trasmite en primer lugar el de mayor peso. Checksum es XOR de los N bytes de datos
 
 
-Tono final
+*Ciclos de fin de trasmision*
 
-Si no se trasmiten más bloques se acaba con un tono de amplitud decreciante hasta cero de 1000 ciclos de 24 muestras .(aprox. 1838 Hz durante 0,5 segundos). En caso de que haya más bloques tras los ciclos de fin de trasmision sigue directamente el tono guia del bloque siguiente (sin pausa ni silencios).
+ Cuatro ciclos con las siguientes duraciones
 
+  1er ciclo 11 muestras
+
+  2º ciclo 12 muestras
+
+  3º ciclo 13 muestras
+
+  4º ciclo 16 muestras
+
+
+*Tono final*
+
+ Si no se trasmiten más bloques se acaba con un tono de amplitud decreciante hasta cero de 1000 ciclos de 24 muestras .(aprox. 1838 Hz durante 0,5 segundos). En caso de que haya más bloques tras los ciclos de fin de trasmision sigue directamente el tono guia del bloque siguiente (sin pausa ni silencios).
