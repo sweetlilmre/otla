@@ -1,0 +1,23 @@
+#summary One-sentence summary of this page.
+
+= Formas de onda=
+
+ ProuectoOtla puede generar distintas formas de onda
+
+*Cuadrada*
+
+
+
+*Cubica*
+
+
+*Raiz cuadrada del seno*
+
+
+*Diente de sierra*
+
+
+*Pulsos de igual energia*
+
+
+*Delta*
