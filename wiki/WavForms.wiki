@@ -2,7 +2,7 @@
 
 = Formas de onda=
 
- ProuectoOtla puede generar distintas formas de onda
+ ProyectoOtla puede generar distintas formas de onda
 
 *Cuadrada*
 
