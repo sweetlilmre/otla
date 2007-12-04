@@ -1,17 +1,17 @@
 =Señal de audio =
 
+La señal de audio tiene esta forma:
+
 [http://personal.auna.com/casariche/otla/signal.png]
 
 *Tono guia*
  Al menos 12 ciclos de 18 muestras (es decir , un tono de 2450 Hz cuando la frecuencia de muestreo es de 44100 HK o 2666 Hz para una frecuencia de muestreo de 48000)
-
  
-*Pulso de sincronismo*
+*sync1  Pulso de sincronismo*
 
- Formado por un pulso negativo de 4 muestras y un pulso positivo de 2 muestras. (fundamental para detectar la polaridad)
+ Formado por un ciclo de 8 muestras. Sirve para detectar la polaridad de la onda
 
-
-*Ciclo postsincromismo*
+*sync2 Ciclo postsincromismo*
 
  Un ciclo de 6 muestras
 
@@ -35,7 +35,6 @@
   velocidad = f / ((2x+3d)/2)
 
 
-
  Cuatro símbolos codifican un byte siendo el símbolo que se trasmite en primer lugar el de mayor peso. Checksum es XOR de los N bytes de datos
 
 
@@ -51,7 +50,10 @@
 
   4º ciclo 16 muestras
 
+*Siguiente bloque de datos*
+
+ En caso de transmitir más de un bloque de datos se sique sin pausa el tono guia del siguente bloque
 
 *Tono final*
 
- Si no se trasmiten más bloques se acaba con un tono de amplitud decreciante hasta cero de 1000 ciclos de 24 muestras .(aprox. 1838 Hz durante 0,5 segundos). En caso de que haya más bloques tras los ciclos de fin de trasmision sigue directamente el tono guia del bloque siguiente (sin pausa ni silencios).
+ Si no se trasmiten más bloques se acaba con un tono de amplitud decreciante hasta cero de 1000 ciclos de 24 muestras .(aprox. 1838 Hz durante 0,5 segundos). 
