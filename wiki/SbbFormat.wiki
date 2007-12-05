@@ -1,4 +1,4 @@
-#summary Defición del formato sbb
+#summary Definición del formato sbb
 
 = Formato fichero sbb =
 
