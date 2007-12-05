@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary distas fromas de onda para cargas de alta velocidad
 
 = Formas de onda=
 
