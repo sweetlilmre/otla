@@ -1,4 +1,4 @@
-#summary distas fromas de onda para cargas de alta velocidad
+#summary Distintas formas de onda para cargas a alta velocidad
 
 = Formas de onda=
 
