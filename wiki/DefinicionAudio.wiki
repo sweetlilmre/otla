@@ -1,3 +1,5 @@
+#sumary  Definición de la señal de audio para carga a alta velocidad
+
 =Señal de audio =
 
 La señales de audio qeu amneja el ProyectoOtla son señales audio mono con frecuqncias de muestreo 44100 Hz o 48000 Hz.
