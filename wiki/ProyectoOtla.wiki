@@ -7,6 +7,3 @@ EL proyecto OTLA ofrece una alternativa a la obsoleta cinta de cassette para car
 Para la carga de programas se procede como normalmente (load"",etc) pero en lugar de conectar un reproductor de cassette a la vieja computadora se conecta un reproductor de CD, MP3, la tarjeta de sonido de un PC, etc. No se necesita de ningún dispositivo adicional  y la carga será considerable más rápida que las cargas con cassette de la época.
 
 El softaware consta de dos ejecuables OtlaPlayer y OtlaBuilder
-[
-<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/vuxsgbK0ZcU"></param><embed src="http://www.youtube.com/v/vuxsgbK0ZcU" type="application/x-shockwave-flash" width="425" height="350"></embed></object>
-]
