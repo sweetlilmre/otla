@@ -12,7 +12,7 @@ SBB  (Stream of Binary Blocks)
 
 cabecera 
 
-||---||nombre|| type||
+||posición||nombre|| type||
 ||0..2 ||sbb_version|| char(3)||
 ||3..7 ||maquina || char(5)||
 ||8..15 || nombre || char(16)||
@@ -28,7 +28,7 @@ cabecera
 
 bloques
 
-||     ||nombre|| type||
+||posición||nombre|| type||
 ||0..15||blockname|| char (16) ||
 ||16..17||ini|| short ||
 ||18..19||size|| short ||
