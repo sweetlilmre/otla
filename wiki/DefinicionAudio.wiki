@@ -1,4 +1,4 @@
-#sumary  Definición de la señal de audio para carga a alta velocidad
+#summary Definición de la señal de audio para carga a alta velocidad
 
 =Señal de audio =
 
