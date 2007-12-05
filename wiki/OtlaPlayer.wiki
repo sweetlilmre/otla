@@ -1,4 +1,4 @@
-#crea ficheros wav
+#summary ejecutable para crear la señal de audio
 
 = El reproductor otla =
 
