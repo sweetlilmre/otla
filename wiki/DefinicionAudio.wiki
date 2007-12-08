@@ -36,7 +36,7 @@ Y tiene la siguiente estructura:
  donde x puede ser 2 muestras o más
  Y d puede ser una diferencia entre simbolos de 1 ó 2
 
- x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad (bit por segundo)
+ x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad (bps)
 
   velocidad = f / ((2x+3d)/2)
 
