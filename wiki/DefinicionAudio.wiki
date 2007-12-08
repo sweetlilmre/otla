@@ -25,7 +25,7 @@ Y tiene la siguiente estructura:
 
  4(1+n) ciclos. Cada ciclo codifica una pareja de bits (símbolo) según esta tabla
 
-  '00' ciclo de x muestras
+  '00' ciclo de x  muestras
  
   '01' ciclo de x+d muestras
 
@@ -48,13 +48,13 @@ Y tiene la siguiente estructura:
 
  Cuatro ciclos con las siguientes duraciones
 
-  1er ciclo 11 muestras
+  un  ciclo de  x+3d+2  muestras
 
-  2º ciclo 12 muestras
+  un  ciclo de x+3d+4  muestras
 
-  3º ciclo 13 muestras
+  un  ciclo de x+3d+5  muestras
 
-  4º ciclo 16 muestras
+  un  ciclo de x+3d+6  muestras
 
 *Siguiente bloque de datos*
 
