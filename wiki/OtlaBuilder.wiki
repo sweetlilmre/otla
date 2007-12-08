@@ -3,6 +3,6 @@
 = otlaBuiler.exe =
 
 
-Los progrmas que en su día se almacenaban en cintas de cassette, discos de 3" o cartchos rom se puden enontrar hoy en dia en ficheros que se pueden descargar de internet. 
+Los progrmas que en su día se almacenaban en cintas de cassette, discos de 3" o cartuchos rom se puden encontrar hoy en día en ficheros que se pueden descargar de internet. 
 
-Para cargar estos ficheros en una ZX, CPC, MSX real con OtlaPlayer primero hay que convertirlos a un formato normalizado (SbbFormat)
+Para cargar estos ficheros en un ZX, CPC, MSX real con OtlaPlayer primero hay que convertirlos a un formato normalizado (SbbFormat)
