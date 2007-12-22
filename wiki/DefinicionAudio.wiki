@@ -2,16 +2,16 @@
 
 =Señal de audio =
 
-La señales de audio qeu amneja el ProyectoOtla son señales audio mono con frecuqncias de muestreo 44100 Hz o 48000 Hz.
+La señales de audio que maneja la rutina de carga del ProyectoOtla son señales mono con frecuencias de muestreo de 44100 Hz o 48000 Hz.
 
-Se pueden emplear difentes formas de onda (WavForms)
+Se pueden emplear difentes formas de onda, WavForms. Elegir la forma de onda adecuada cuando se quieren experimentar las velocidad de carga más altas puede ser determinante.
 
 Y tiene la siguiente estructura:
 
 [http://personal.auna.com/casariche/otla/signal.png]
 
 *Tono guia*
- Al menos 12 ciclos de 18 muestras (es decir , un tono de 2450 Hz cuando la frecuencia de muestreo es de 44100 HK o 2666 Hz para una frecuencia de muestreo de 48000)
+ Al menos 12 ciclos de 18 muestras (es decir, un tono de 2450 Hz cuando la frecuencia de muestreo es de 44100 HK o 2666 Hz para una frecuencia de muestreo de 48000)
  
 *sync1  Pulso de sincronismo*
 
@@ -38,10 +38,27 @@ Y tiene la siguiente estructura:
 
  x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad (bps)
 
-  velocidad = f / ((2x+3d)/2)
+  f / ((2x+3d)/4) =  velocidad  (bps) 
+
+|| f || x || d || bps ||
+|| 44100 || 5 || 2 || 11025 ||
+|| 48000 || 5 || 2 || 12000 ||
+|| 44100 || 4 || 2 || 12600 ||
+|| 48000 || 4 || 2 || 13714 ||
+|| 44100 || 3 || 2 || 14700 ||
+|| 48000 || 3 || 2 || 16000 ||
+|| 44100 || 4 || 1 || 16036 ||
+|| 48000 || 4 || 1 || 17455 ||
+|| 44100 || 2 || 2 || 17640 ||
+|| 48000 || 2 || 2 || 19200 ||
+|| 44100 || 3 || 1 || 19600 ||
+|| 48000 || 3 || 1 || 21333 ||
+|| 44100 || 2 || 1 || 25200 ||
+|| 48000 || 2 || 1 || 27428 ||
 
 
- Cuatro símbolos codifican un byte siendo el símbolo que se trasmite en primer lugar el de mayor peso. Checksum es XOR de los N bytes de datos
+ Cuatro símbolos codifican un byte siendo el símbolo que se trasmite en primer lugar el de mayor peso.
+ El primer byte que se trasmite es un checksum  ( XOR de los N bytes de datos ) y luego N bytes de datos
 
 
 *Ciclos de fin de trasmision*
