@@ -33,7 +33,7 @@ Y tiene la siguiente estructura:
 
   '11' ciclo de x+3d muestras
 
- Donde x puede ser 2 muestras o más y d puede ser una diferencia entre simbolos de 1 ó 2. x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad (bps). f / ((2x+3d)/4) =  velocidad  (bps) 
+ Donde x puede ser 2 muestras o más y d puede ser una diferencia entre simbolos de 1 ó 2. x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad de trasmisión (velocidad media). f / ((2x+3d)/4) =  velocidad  (bps) 
 
 || f || x || d || bps ||
 || 44100 || 5 || 2 || 11025 ||
