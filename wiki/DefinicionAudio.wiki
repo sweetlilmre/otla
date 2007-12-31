@@ -56,7 +56,7 @@ Y tiene la siguiente estructura:
  El primer byte que se trasmite es un checksum  ( XOR de los N bytes de datos ) y luego N bytes de datos
 
 
-*Ciclos de fin de trasmision*
+*Ciclos de fin de trasmision de bloque*
 
  Cuatro ciclos con las siguientes duraciones
 
