@@ -15,12 +15,12 @@ cabecera
 ||posición||nombre|| type||
 ||0..2 ||sbb_version|| char(3)||
 ||3..7 ||maquina || char(5)||
-||8..15 || nombre || char(16)||
-||16 || caux|| char||
-||17 || tipo|| char||
-||18 || n_blocks|| char||
-||19..20|| clear || short ||
-||21..22 || n_usr|| short ||         
+||8..23 || nombre || char(16)||
+||24 || caux|| char||
+||25 || tipo|| char||
+||26 || n_blocks|| char||
+||27..29|| clear || short ||
+||30..31|| n_usr|| short ||         
         
 
 
