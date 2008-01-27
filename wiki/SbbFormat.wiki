@@ -4,6 +4,7 @@
 
 SBB  (Stream of Binary Blocks)
 
+Atención.El formato que se describe a continuación quedará obsoleto con la proxima version
 
 = Cabecera  y bloques Cabecera2 =
 
