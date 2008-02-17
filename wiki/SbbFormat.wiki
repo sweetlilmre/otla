@@ -14,7 +14,7 @@ cabecera
 ||position||field name|| type||comment||
 ||0..2 ||sbb_version|| char(3)||always "SB" + version number|| 
 ||3..7 ||machine|| char(5)||ZX , CPC , MSX||
-||8..15 ||extre_info|| char(8)||ReadyForUses||
+||8..15 ||extre_info|| char(8)||Ready  ForUses||
 ||16..31 || name|| char(16)||name||
 ||24 || caux|| char||RFU||
 ||25 || origin|| char|| ||
@@ -33,12 +33,12 @@ bloques
 ||16..17||size|| short ||number of data bytes ||
 ||18..19||param3|| short || aux parammter ||
 ||20||block_type|| char|| type||
-||21||h_chksum|| char||  ||
-||22..23||ini|| short || ||
-||24|jump|| char|| type || ||
-||25..26||exec|| short || ||
-||27||d_chksum|| char || ||
-||28..size+28||data || char (size) || ||
+||21||h_chksum|| char|| checksum for header of block ((ini-1)^jump^exec)  ||
+||22..23||ini|| short || start memory address for data ||
+||24|jump|| char|| type || 0xC3 or 0xCD block for execuable block||
+||25..26||exec|| short || execution address for data if zero non executable||
+||27||d_chksum|| char || checksum for data ||
+||28..size+28||data || char (size) || memory block||
 
 Atención.El formato que se describe a continuación quedará obsoleto con la proxima version
 
