@@ -14,9 +14,9 @@ cabecera
 ||position||field name|| type||comment||
 ||0..2 ||sbb_version|| char(3)||always "SB" + version number|| 
 ||3..7 ||machine|| char(5)||ZX , CPC , MSX||
-||8..15 ||extre_info|| char(8)||Ready  For Uses||
+||8..15 ||extre_info|| char(8)||Ready  For Future Uses||
 ||16..31 || name|| char(16)||name||
-||24 || caux|| char||RFU||
+||24 || caux|| char||RFFU||
 ||25 || origin|| char|| sbb was built from tap, bin , sna ...||
 ||26 || n_blocks|| char||number of blocks ||
 ||26 || poke_ffff|| char||msx pagination||
@@ -35,8 +35,8 @@ bloques
 ||20||block_type|| char|| type||
 ||21||h_chksum|| char|| checksum for header of block ((ini-1)^jump^exec)  ||
 ||22..23||ini|| short || start memory address for data ||
-||24|jump|| char|| type || 0xC3 or 0xCD block for execuable block||
-||25..26||exec|| short || execution address for data. If zero is not executable||
+||24|jump|| char|| type || 0xC3 or 0xCD for an execuable block||
+||25..26||exec|| short || execution address for block. If zero is not executable||
 ||27||d_chksum|| char || checksum for data ||
 ||28..size+28||data || char (size) || memory block||
 
