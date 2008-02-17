@@ -4,6 +4,42 @@
 
 SBB  (Stream of Binary Blocks)
 
+= Cabecera  y bloques Cabecera2 =
+
+
+==formato cabecera==
+
+cabecera 
+
+||position||field name|| type||comment||
+||0..2 ||sbb_version|| char(3)||always "SB" + version number|| 
+||3..7 ||machine|| char(5)||ZX , CPC , MSX||
+||8..15 ||extre_info|| char(8)||ReadyForUses||
+||16..31 || name|| char(16)||name||
+||24 || caux|| char||RFU||
+||25 || origin|| char|| ||
+||26 || n_blocks|| char||number of blocks ||
+||26 || poke_ffff|| char||msxpagination||
+||27..29|| clear || short || clear or SP  || 
+||30..31|| n_usr|| short || execution point  ||      
+        
+
+
+==formato bloques==
+
+bloques
+||position||field name|| type||comment||
+||0..15||blockname|| char (16) ||
+||16..17||size|| short ||number of data bytes ||
+||18..19||param3|| short || aux parammter ||
+||20||block_type|| char|| type||
+||21||h_chksum|| char||  ||
+||22..23||ini|| short || ||
+||24|jump|| char|| type || ||
+||25..26||exec|| short || ||
+||27||d_chksum|| char || ||
+||28..size+28||data || char (size) || ||
+
 Atención.El formato que se describe a continuación quedará obsoleto con la proxima version
 
 = Cabecera  y bloques Cabecera2 =
