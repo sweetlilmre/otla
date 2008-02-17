@@ -4,12 +4,12 @@
 
 SBB  (Stream of Binary Blocks)
 
-= Cabecera  y bloques Cabecera2 =
+A SBB file has one header and blocks of data to be loaded
 
 
-==formato cabecera==
+==Header Format==
 
-cabecera 
+
 
 ||position||field name|| type||comment||
 ||0..2 ||sbb_version|| char(3)||always "SB" + version number|| 
@@ -25,7 +25,7 @@ cabecera
         
 
 
-==formato bloques==
+==Block format==
 
 bloques
 ||position||field name|| type||comment||
