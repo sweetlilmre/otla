@@ -2,12 +2,13 @@
 
 = Introduction =
 
-Add your content here.
+k7zx can convert sbb files (created with OtlaBuilder) to wav files
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+OtlaPlayer converts .sbb to .wav using one of the many encoding techniques avalable in spectrum tool k7zx. (Shavings Slow which offers best ratio speed/reliability).
+
+Spectrum users although may preffer other techniques for faster loads
+
+[http://personal.auna.com/casariche/k7zx4/cuadro.gif]
