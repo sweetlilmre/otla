@@ -2,7 +2,7 @@
 
 = Introduction =
 
-k7zx can convert sbb files (created with OtlaBuilder) to wav files
+New version 4.3 of k7zx can convert sbb files (created with OtlaBuilder) to wav files
 
 
 = Details =
