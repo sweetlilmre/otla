@@ -12,7 +12,7 @@ A SBB file has one header and blocks of data to be loaded
 
 
 ||position||field name|| type||comment||
-||0..2 ||sbb_version|| char(3)||always "SB" + version number|| 
+||0..2 ||sbb_version|| char(3)||always "SB" + version number (2.0=0x20)|| 
 ||3..7 ||machine|| char(5)||ZX , CPC , MSX||
 ||8..15 ||extre_info|| char(8)||Ready  For Future Uses||
 ||16..31 || name|| char(16)||name||
@@ -33,7 +33,7 @@ bloques
 ||16..17||size|| short ||number of data bytes ||
 ||18..19||param3|| short || aux parammter ||
 ||20||block_type|| char|| type||
-||21||h_chksum|| char|| checksum for header of block ((ini-1)^jump^exec)  ||
+||21||h_chksum|| char|| checksum for header of block ((ini-1) XOR jump XOR exec)  ||
 ||22..23||ini|| short || start memory address for data ||
 ||24||jump|| char||  0xC3 or 0xCD for an execuable block||
 ||25..26||exec|| short || execution address for block. If zero is not executable||
