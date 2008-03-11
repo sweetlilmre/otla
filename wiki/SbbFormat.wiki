@@ -13,15 +13,16 @@ A SBB file has one header and blocks of data to be loaded
 
 ||position||field name|| type||comment||
 ||0..2 ||sbb_version|| char(3)||always "SB" + version number (2.0=0x20)|| 
-||3..7 ||machine|| char(5)||ZX , CPC , MSX||
+||3..6 ||machine|| char(4)||ZX , CPC , MSX||
+||7 ||model|| char ||model 48k, +2A. 464 ...||
 ||8..15 ||extre_info|| char(8)||Ready  For Future Uses||
 ||16..31 || name|| char(16)||name||
-||24 || caux|| char||RFFU||
+||24 || locate|| char||Most Significative Byte for the address of loading rutine||
 ||25 || origin|| char|| sbb was built from tap, bin , sna ...||
 ||26 || n_blocks|| char||number of blocks ||
-||26 || poke_ffff|| char||msx pagination||
-||27..29|| clear || short || clear or SP  || 
-||30..31|| n_usr|| short || execution point  ||      
+||26 || poke_ffff|| char||msx pagination (if 0, SP is not modified)||
+||27..29|| clear || short || clear or SP (if 0, SP is not modified) || 
+||30..31|| n_usr|| short || execution address (if 0, it is not executable ) ||      
         
 
 
