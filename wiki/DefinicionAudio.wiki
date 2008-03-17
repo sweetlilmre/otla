@@ -35,21 +35,14 @@ Y tiene la siguiente estructura:
 
  Donde x puede ser 2 muestras o más y d puede ser una diferencia entre simbolos de 1 ó 2. x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad de trasmisión (velocidad media). f / ((2x+3d)/4) =  velocidad  (bps) 
 
-|| f || x || d || bps ||
-|| 44100 || 5 || 2 || 11025 ||
-|| 48000 || 5 || 2 || 12000 ||
-|| 44100 || 4 || 2 || 12600 ||
-|| 48000 || 4 || 2 || 13714 ||
-|| 44100 || 3 || 2 || 14700 ||
-|| 48000 || 3 || 2 || 16000 ||
-|| 44100 || 4 || 1 || 16036 ||
-|| 48000 || 4 || 1 || 17455 ||
-|| 44100 || 2 || 2 || 17640 ||
-|| 48000 || 2 || 2 || 19200 ||
-|| 44100 || 3 || 1 || 19600 ||
-|| 48000 || 3 || 1 || 21333 ||
-|| 44100 || 2 || 1 || 25200 ||
-|| 48000 || 2 || 1 || 27428 ||
+|| x || d || bps (f=44.1 kHz)|| bps (f=48 kHz)||
+|| 5 || 2 || 11,025 || 12,000 ||
+|| 4 || 2 || 12,600 || 13,714 ||
+|| 3 || 2 || 14,700 || 16,000 ||
+|| 4 || 1 || 16,036 || 17,455 ||
+|| 2 || 2 || 17,640 || 19,200 ||
+|| 3 || 1 || 19,600 || 21,333 ||
+|| 2 || 1 || 25,200 || 27,428 ||
 
 
  Cuatro símbolos codifican un byte siendo el símbolo que se trasmite en primer lugar el de mayor peso.
