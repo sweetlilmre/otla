@@ -16,6 +16,10 @@ Para la carga de alta velocidad hay que ajustar finamente el volumen (para calib
 
 y MUY IMPORTATE desactivar de los reproductores cualquier tipo de ecualización extraña, efecto 3D , etc...
 
+*En un ordenador real las cargas funcionan pero en un emulador no*
+
+Algunos emuladores solo trabajan bien con la forma de onda cuadrada.
+Otros pueden funcionar con una velocidad moderada (12,600) pero falla a velocidades más altas.
 
 *Cuando convierto ficheros .sna o z80 las cargas funcionan sin problemas pero algunos ficheros .tap y .tzx no funcionan ni siquiera cuando lo pruebo en emuladores*
 
@@ -53,5 +57,3 @@ pasa MSX 21333 bps
 
 El standard en cuaquier caso es 3,5 samples/ bit a 44100Hz = 12600 bps.
 Se puede elegir todavía una velocidad más lenta (4 samples/bit) para que el sistema funcione incluso con un adaptador magnetico de audio a cabezal de cassette.
-
-
