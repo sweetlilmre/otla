@@ -1,0 +1,57 @@
+#summary One-sentence summary of this page.
+
+= Preguntas Frecuentes (F.A.Q) =
+
+FAQ
+
+*¿Qué significan las siglas o.t.l.a?
+
+Viene de una canción de Willie Nelson _On The Road Again_. Pero cambiado un poco: On The Load Again. Otra vez con el LOAD"" ...
+
+*En un emulador las cargas funcionan pero en un ordenador real no*
+
+Primero hay que asegurarse que al menos funciona la parte de velocidad estandard. El programa cargador debería cargar (con LOAD"" , RUN" , o BLOAD"CAS:",R) como cualquier programa normal. Si no es así revisar el cable, etc.
+
+Para la carga de alta velocidad hay que ajustar finamente el volumen (para calibrar lo mejor es usar las patallas de test). Compárese lo que se ve en un emulador con lo que se ve en la máquina real. 
+
+y MUY IMPORTATE desactivar de los reproductores cualquier tipo de ecualización extraña, efecto 3D , etc...
+
+
+*Cuando convierto ficheros .sna o z80 las cargas funcionan sin problemas pero algunos ficheros .tap y .tzx no funcionan ni siquiera cuando lo pruebo en emuladores*
+
+No siempre es posible convertir ficheros .tap y .tzx automáticamente. La primera condición para una conversión fácil es que los bloques de bytes vengan con una cabacera con la información de la direcion de inicio donde se cargarán los bytes. La segunda es que se debe tener una dirección de ejecución una vez cargados los bytes (el famoso USR).
+En que caso de que otlabulder no encuetre estos parametros automaticamente siempre se pueden asignar manualmente pero averiguar esos valores no es trival. 
+ Un emulador puede ser de ayuda. Con algo de practica y habilidad hasta se podrían tener juegos multicarga a alta velocidad.
+
+
+*¿44100 ó 48000?*
+
+La elección de la frecuencia de muestreo no debe ser algo caprichoso. Es evidente que 48000 permite velocidades superiores. Pero la frecuencia de muestreo debe ser la frecuencia de muesreo que utiliza el dispositivo de sonido digital. En un reproductor de CD será 44100 Hz en un MP3 podría ser 48000. Ante la duda 44100 Hz
+
+
+*¿cómo sé la frequencia de sonido de mi tarjeta de sonido?*
+
+Lo mejor es hacer una pruebas de carga con las pantallas de test eligiendo 3.00 samples / bit y forma de onda cuadrada. La carga es correcta a 48000 y no a 44100 la tarjata será problamente de 48000 . Si la carga falla con 48000 y va bien con 44100 la tarjeta será seguramente de 44100.
+
+
+*¿Que forma de onda utlizar?*
+
+La  onda cúbica es mejor forma de onda para cagar a 3,5 samples/bit con mp3 y para tarjetas de sonido de las que desconocemos su frequencia de muestreo. Otra cosas es que se quieran hacer experimentos con velocidades más altas.
+
+
+*Las cargas con la tarjeta de sonido van bien pero con el reproductor de MP3 fallan*
+
+El mayor inconveniente de los reproductores MP3 alimentados con pilas recargables de 1,2v es que tiene poca potencia de salida. Se puede utlizar un pequeño amplificador.
+La conversión a mp3 se hace con la herrameinta LAME.EXE y con la opción fast
+
+*¿Cuales son la velocidades máximas que se pueden alcanzar?"
+
+Pues depende de la Maquina (ZX, CPC , MSX ) En mis pruebas he conseguido
+para ZX se consiguen 19200 bps
+para CPC 16200 bps
+pasa MSX 21333 bps
+
+El standard en cuaquier caso es 3,5 samples/ bit a 44100Hz = 12600 bps.
+Se puede elegir todavía una velocidad más lenta (4 samples/bit) para que el sistema funcione incluso con un adaptador magnetico de audio a cabezal de cassette.
+
+
