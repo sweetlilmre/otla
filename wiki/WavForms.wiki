@@ -18,11 +18,11 @@ Y sobre todo cuando se quiere convertir el sonido a un formato MP3 la onda cuadr
 
 *Cubica*
 
-Se construye con un polinomio de orden 3:  x*(x+P)*(x-P) donde 1/(2*P) es la frecquncia
+Se construye con un polinomio de orden 3:  x(x+P)(x-P) donde 1/(2*P) es la frecquncia
 
 *Raiz cuadrada del seno*
 
-Parecida a la anterior ofrece mayor pendiente en los flancos de subida y bajada
+Parecida a la anterior ofrece mayor pendiente en los flancos de subida y bajada. Esta forma de onda es la que se utiliza para generar la parte de carga normal.
 
 *Diente de sierra*
 
