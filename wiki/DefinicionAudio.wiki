@@ -13,13 +13,13 @@ Y tiene la siguiente estructura:
 *Tono guia*
  Al menos 12 ciclos de 18 muestras (es decir, un tono de 2450 Hz cuando la frecuencia de muestreo es de 44100 HK o 2666 Hz para una frecuencia de muestreo de 48000)
  
-*sync1  Pulso de sincronismo*
+*sync1  Ciclos de sincronismo*
 
- Formado por un ciclo de 8 muestras. Sirve para detectar la polaridad de la onda
+ Formado por un ciclo de 8 muestras (un pulso negativo de 4 muestras y uno positico de 4 muestras). Sirve para detectar la polaridad de la onda
 
 *sync2 Ciclo postsincromismo*
 
- Un ciclo de 6 muestras
+ Un ciclo de 8 muestras o menos dependiendo de la velocidad elegida de transmisión. Sirve para dar tiempo a la rutina de carga a hacer algunas operaciones antes de empezar a recibir datos.
 
 *Checksum + N bytes de datos*
 
@@ -33,7 +33,7 @@ Y tiene la siguiente estructura:
 
   '11' ciclo de x+3d muestras
 
- Donde x puede ser 2 muestras o más y d puede ser una diferencia entre simbolos de 1 ó 2. x y d conjuntamente con la frecuencia de muestreo del wav determinan la velocidad de trasmisión (velocidad media). f / ((2x+3d)/4) =  velocidad  (bps) 
+ Donde *x* puede ser 2 muestras o más y *d* puede ser una diferencia entre simbolos de 1 ó 2. *x* y *d* conjuntamente con la frecuencia de muestreo del wav determinan la velocidad de trasmisión (velocidad media).   Velocidad  (bps)  =  f / ((2x+3d)/4)
 
 || x || d || samples/bit || bps (f=44.1 kHz)|| bps (f=48 kHz)||
 || 5 || 2 || 4.0||11,025 || 12,000 ||
