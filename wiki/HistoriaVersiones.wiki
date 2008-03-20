@@ -6,7 +6,7 @@
 
 1.0 
 
-	primera version: velocidad 12.600 bps (3,5 samples/bit 44100)
+	primera version: velocidad 12.600 bps (3,5 samples/bit - 44100 Hz)
 
 1.1
 
