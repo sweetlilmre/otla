@@ -9,7 +9,8 @@
 	primera version: velocidad 12.600 bps (3,5 samples/bit 44100)
 
 1.1
-	
+
+	.
 	
 1.2
 	velocidad más lenta. 
