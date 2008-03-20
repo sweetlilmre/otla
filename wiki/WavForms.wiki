@@ -26,7 +26,7 @@ Parecida a la anterior ofrece mayor pendiente en los flancos de subida y bajada.
 
 *Diente de sierra*
 
-Mayor pendiente posible del flanco de bajada y suave ciclo de bajada.
+Mayor pendiente posible del flanco de bajada y suave ciclo de subida.
 
 *Pulsos de igual energia*
 
