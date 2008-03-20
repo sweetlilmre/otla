@@ -31,8 +31,8 @@ Mayor pendiente posible del flanco de bajada y suave ciclo de bajada.
 *Pulsos de igual energia*
 
 Las ciclos de altas frecuencias se transmiten con mayor amplitud de los de baja de tal forma qua energia de los pulsos es constante.
-Intuición teorica que realmete funciona. (Sobre todo en otro tipo de trasmisiones como Manchester)
+Intuición teórica que realmente funciona. (Sobre todo en otro tipo de trasmisiones como Manchester)
 
 *Delta*
 
-Pueramente experimental
+Puramente experimental
