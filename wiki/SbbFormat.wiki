@@ -20,9 +20,9 @@ A SBB file has one header and blocks of data to be loaded
 ||24 || locate|| char||Most Significative Byte for the address of loading rutine||
 ||25 || origin|| char|| sbb was built from tap, bin , sna ...||
 ||26 || n_blocks|| char||number of blocks ||
-||26 || poke_ffff|| char||msx pagination (if 0, SP is not modified)||
+||26 || poke_ffff|| char||msx pagination (if 0, Poke -1 is not modified)||
 ||27..29|| clear || short || clear or SP (if 0, SP is not modified) || 
-||30..31|| n_usr|| short || execution address (if 0, it is not executable ) ||      
+||30..31|| n_usr|| short || execution address (if 0, it is not an executable block ) ||      
         
 
 
@@ -30,7 +30,7 @@ A SBB file has one header and blocks of data to be loaded
 
 bloques
 ||position||field name|| type||comment||
-||0..15||blockname|| char (16) ||
+||0..15||blockname|| char (16) || description||
 ||16..17||size|| short ||number of data bytes ||
 ||18..19||param3|| short || aux parammter ||
 ||20||block_type|| char|| type||
