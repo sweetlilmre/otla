@@ -22,7 +22,7 @@ A SBB file has one header and blocks of data to be loaded
 ||26 || n_blocks|| char||number of blocks ||
 ||26 || poke_ffff|| char||msx pagination (if 0, Poke -1 is not modified)||
 ||27..29|| clear || short || clear or SP (if 0, SP is not modified) || 
-||30..31|| n_usr|| short || execution address (if 0, it is not an executable block ) ||      
+||30..31|| n_usr|| short || execution address after loading all bloackd(if 0, it is not an executable ) ||      
         
 
 
@@ -31,15 +31,15 @@ A SBB file has one header and blocks of data to be loaded
 bloques
 ||position||field name|| type||comment||
 ||0..15||blockname|| char (16) || description||
-||16..17||size|| short ||number of data bytes ||
+||16..17||size|| short ||number or bytes for data ||
 ||18..19||param3|| short || aux parammter ||
 ||20||block_type|| char|| type||
-||21||h_chksum|| char|| checksum for header of block ((ini-1) XOR jump XOR exec)  ||
+||21||h_chksum|| char|| checksum for header of block =((ini-1) XOR jump XOR exec)  ||
 ||22..23||ini|| short || start memory address for data ||
-||24||jump|| char||  0xC3 or 0xCD for an execuable block||
-||25..26||exec|| short || execution address for block. If zero is not executable||
+||24||jump|| char||  0xC3 or 0xCD for an executable block , 0x01 or oxc9 in other case||
+||25..26||exec|| short || execution address for block. If zero is not an executable block||
 ||27||d_chksum|| char || checksum for data ||
-||28..size+28||data || char (size) || memory block||
+||28..size+28||data || char (size) || memory block ||
 
 
 .
