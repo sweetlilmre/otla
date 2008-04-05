@@ -1,4 +1,14 @@
-#summary Ejecutable para construir ficheros sbb
+#summary Otlabuilder is a program that creates sbb files
+
+=  otlaBuiler.exe =
+
+
+The progrmas that once were stored on cassette tapes, discs 3 "or ROM cartridges were found puden today in files that can be downloaded from the Internet.
+
+To load these files into a ZX, CPC, MSX real-OtlaPlayer first have to convert them into a standard format (SbbFormat)
+
+
+# summary Ejecutable para construir ficheros sbb
 
 = otlaBuiler.exe =
 
