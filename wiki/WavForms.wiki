@@ -1,3 +1,42 @@
+#summary Different waveforms for loads at high speed
+
+=Wave Forms =
+
+  OtlaPalyer can generate different waveforms.
+
+The default is to use the waveform cube.
+
+When you want to experiment with higher speeds it is possible that another form of wave function better
+
+*  Square *
+
+It is the natural way to represent the transmission of data by a line audio as did home computers 80 years. Many tools work only with this waveform.
+But when it comes to a prenos real, not ideal wave that "hears" the computer will never be square.
+And especially when you want to convert the sound to an MP3 format gives the square wave dismal results.
+
+(Note: some emulators only work well with the square waveform)
+
+* Cubic  *
+
+It was constructed using a 3 order polynomial : x(x + P)(xP) where 1/(2P) is the frequency
+
+* Square Root Sine* 
+
+Similar to the previous offer more outstanding in the falling and rising edges. This waveform is used to generate part of the normal load.
+
+* Saw tooth * 
+
+Better falling edge and smooth rising edge
+
+* Equal energy pulse * 
+
+The square pulses of high frequencies are transmitted with different amplitude dependig on thier frequency. So electrical energy quantum is constant for each pulse.
+Theorical intuition that actually works. 
+
+*Delta * 
+
+Purely experimental
+
 #summary Distintas formas de onda para cargas a alta velocidad
 
 = Formas de onda=
