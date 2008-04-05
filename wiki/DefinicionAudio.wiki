@@ -1,12 +1,12 @@
-# This section defines the audio signal for high speed loading
+#summary Audio signal definition for high speed loadings
 
 = Audio Signal  =
 
-The audio signals that handles the routine load ProyectoOtla are mono and with 44100 Hz or 48000 Hz sampling frequencies.
+The audio signals that handles the loading  routine of ProyectoOtla are mono and with 44100 Hz or 48000 Hz sampling frequencies.
 
-It can be used difentes waveforms, WavForms. Choosing the appropriate waveform when tryng to experience the highest rate of loading can be decisive.
+It can be used diferents waveforms, WavForms. Choosing the appropriate waveform when tryng to experience the highest rate of loading speed can be decisive.
 
-And has the following structure:
+And signal has the following structure:
 
 [http://personal.auna.com/casariche/otla/signal.png]
 
@@ -21,7 +21,7 @@ And has the following structure:
 
   A cycle of 8 samples or less depending on the chosen speed transmission. It serves to allow time for the routine to make some loading operations prior to start receiving data.
 
-* Check & N bytes of data *
+* Check + N bytes of data *
 
   4 (1 + n) cycles. Each cycle encodes a couple of bits (symbol) as this table
 
@@ -64,7 +64,7 @@ And has the following structure:
 * Next Data block * 
 
   If more than one block are trasmitted, the pilot guide of next block follows the end of transmission of precedent block.
-  Particular case are blocks with precedeing header. A header is a block of cheksum + 5 bytes (star address + executable tye + execution address)
+  Particular case are blocks with precedeing header. A header is a block with cheksum + 5 bytes (start address + executable tye + execution address)
 
 * Tone end * 
 
