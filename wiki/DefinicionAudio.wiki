@@ -8,7 +8,7 @@ It can be used difentes waveforms, WavForms. Choosing the appropriate waveform w
 
 And has the following structure:
 
-[Http://personal.auna.com/casariche/otla/signal.png]
+[http://personal.auna.com/casariche/otla/signal.png]
 
 * Tone Guide * 
   At least 12 cycles of 18 samples (ie, a tone of 2450 Hz if the sampling frequency is 2666 Hz or HK 44100 for a sample rate of 48000)
@@ -35,14 +35,14 @@ And has the following structure:
 
   Where * x * can be two samples or more and * d * is minimum difference between symbols (one or two) . * X * , * d * and the sampling frequency of the wav file determine the speed of transmission (average speed). Speed (bps) = f / ((2x +3 d) / 4)
 
-| | X | | d | | samples / bit | | bps (f = 44.1 kHz) | | bps (f = 48 kHz) | |
-| | 5 | | 2 | | 4.0 | | 11.025 | | 12.000 | |
-| | 4 | | 2 | | 3.5 | | 12.600 | | 13.714 | |
-| | 3 | | 2 | | 3.0 | | 14.700 | | 16.000 | |
-| | 4 | | 1 | | 2.75 | | 16.036 | | 17.455 | |
-| | 2 | | 2 | | 2.5 | | 17.640 | | 19.200 | |
-| | 3 | | 1 | | 2.25 | | 19.600 | | 21.333 | |
-| | 2 | | 1 | | 1.75 | | 25.200 | | 27.428 | |
+|| X || d || samples / bit || bps (f = 44.1 kHz) || bps (f = 48 kHz) ||
+|| 5 || 2 || 4.0 || 11.025 || 12.000 ||
+|| 4 || 2 || 3.5 || 12.600 || 13.714 ||
+|| 3 || 2 || 3.0 || 14.700 || 16.000 ||
+|| 4 || 1 || 2.75 || 16.036 || 17.455 ||
+|| 2 || 2 || 2.5 || 17.640 || 19.200 ||
+|| 3 || 1 || 2.25 || 19.600 || 21.333 ||
+|| 2 || 1 || 1.75 || 25.200 || 27.428 ||
 
 
   Four symbols encode one byte, being the first transmited symbol the most significant.
@@ -61,7 +61,7 @@ And has the following structure:
 
    A cycle of x + 3d + 6 samples
 
- * Next Data block * 
+* Next Data block * 
 
   If more than one block are trasmitted, the pilot guide of next block follows the end of transmission of precedent block.
   Particular case are blocks with precedeing header. A header is a block of cheksum + 5 bytes (star address + executable tye + execution address)
