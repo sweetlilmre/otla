@@ -1,3 +1,60 @@
+#summary FAQs
+
+= FAQ (F.A.Q) =
+
+FAQ
+
+
+*  Loadings work in an emulator but not in a real computer *
+
+First be sure that it works at least the part of the standard routine. The hi-speed loader should be loaded (LOAD "" RUN ", or BLOAD" CAS ", R) as any normal program. If it is not, revising the cable, etc..
+
+For the  high speed loading must be finely adjust the volume (to calibrate the best thing is to use testin screens (.hst)). Compare what you see on an emulator with what you see on the actual machine.
+
+VERY IMPORTANT deactive in digital players any strange equalization, 3D effect, etc. ...
+
+* Loadings work in a real computer but not in an emulator *
+
+Some emulators only work well with the square waveform.
+Others may work with a moderate speed (12600) but fails to higher speeds.
+
+* When convert files. Sna or z80 loadings work smoothly, but some files  .cas ,.tap and .tzxdo not work even when I try on emulators *
+
+It is not always possible to convert files .cas, .tap and .tzx automatically. The first condition for an easy conversion is that the byte blocks come with a header with information of the address home where it must be loaded. The second is that they must have a execution address once loaded the bytes (the famous USR in Zx Spectrum).
+In that event that OtlaBuilder don't find these parameters can be assigned manually but  Figuring  these values out is not trival.
+  An emulator can be helpful. With some practice and skill could take up multiload games at high speed.
+
+* Do 44100 or 48000? *
+
+The choice of the sampling frequency must not be somewhat capricious. It is clear that allows speeds exceeding 48000. But the sampling frequency should be the frequency of muesreo that uses the digital audio device. In a CD player will be 44100 Hz in an MP3 could be 48000. When in doubt: 44100 Hz
+
+
+*  how do I know the sampling frequency of my sound card? *
+
+It is best to make loading tests with screens choosing  3.00 samples / bit and square waveform. If loading is correct to 48000 and not 44100 the to the sound card will probably of 48000. If the load is wrong with 48000 and 44100 goes well with the card will certainly 44100.
+
+
+* What waveform using? *
+
+Wave cubic waveform is best for load to 3.5 samples / s bit mp3 sound cards and for those unaware of its frequency of sampling. Another is that they want things done experiments with higher speeds. Equal energy wavefor can offer good results too.
+
+
+* Loads with the sound card but go well with the MP3 player fail *
+
+The biggest drawback of MP3 players fed with rechargeable batteries v 1.2 is that they  have little power output. It can be using a small amplifier.
+The conversion to mp3 is done with herrameinta LAME.EXE and with the option fast
+
+* What are the maximum speeds that can be achieved? "
+
+It depends on the machine (ZX, CPC, MSX) In my tests I have achieved
+ZX to get 19200 bps
+CPC to 16200 bps
+MSX passes 21333 bps
+
+The standard is 3.5 any case samples / bit to 44100Hz = 12600 bps.
+You can still choose a slower rate (4 samples / bit) for the system to work even with an adapter magnetic audio cassette head. (Very bad condition for audio signal but it still works)
+	
+		
 #summary preguntas frecuentes
 
 = Preguntas Frecuentes (F.A.Q) =
