@@ -1,18 +1,15 @@
-#summary Definición del formato sbb
+#summary .sbb format definition
 
-= Formato fichero sbb =
+= SBB file format =
 
 SBB  (Stream of Binary Blocks)
 
 A SBB file has one header and blocks of data to be loaded
 
-
 ==Header Format==
 
-
-
 ||position||field name|| type||comment||
-||0..2 ||sbb_version|| char(3)||always "SB" + version number (2.0=0x20)|| 
+||0..2 ||sbb_version|| char(3)||always "SB" + version number (2.1=0x21)|| 
 ||3..6 ||machine|| char(4)||ZX , CPC , MSX||
 ||7 ||model|| char ||model 48k, +2A. 464 ...||
 ||8..15 ||extre_info|| char(8)||Ready  For Future Uses||
@@ -22,13 +19,13 @@ A SBB file has one header and blocks of data to be loaded
 ||26 || n_blocks|| char||number of blocks ||
 ||26 || poke_ffff|| char||msx pagination (if 0, Poke -1 is not modified)||
 ||27..29|| clear || short || clear or SP (if 0, SP is not modified) || 
-||30..31|| n_usr|| short || execution address after loading all bloackd(if 0, it is not an executable ) ||      
-        
+||30..31|| n_usr|| short || execution address after loading all bloackd(if 0, it is not an executable ) ||    
 
 
 ==Block format==
 
-bloques
+One of this for each block
+
 ||position||field name|| type||comment||
 ||0..15||blockname|| char (16) || description||
 ||16..17||size|| short ||number or bytes for data ||
@@ -40,6 +37,8 @@ bloques
 ||25..26||exec|| short || execution address for block. If zero is not an executable block||
 ||27||d_chksum|| char || checksum for data ||
 ||28..size+28||data || char (size) || memory block ||
+
+
 
 
 .
