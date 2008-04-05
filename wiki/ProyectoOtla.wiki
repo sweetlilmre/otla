@@ -8,6 +8,8 @@ Those days normal loading speed was about 1000 - 2000 bps.
 
 Proyecto O.T.L.A. will make loadings at 12000 bps or even faster using digital audio devices (cd and mp3 players , pc sound cards ...). Which means that loading a game will take less than one minute, normally about 30 seconds. 
 
+Project consists on two programms : OtlaPlayer and  OtlaBuilder
+
 
 =		Proyecto O.T.L.A. =
 
