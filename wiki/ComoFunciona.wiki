@@ -1,4 +1,4 @@
-#summary How does it works?
+#summary How does it work?
 
 = Explanation of  the loading routine =
 
