@@ -1,0 +1,14 @@
+#summary How does it works?
+
+= Explanation of  the loading routine =
+
+Routina has two parts. 
+First one detects pilot guide tone an the polarity tha came from Cassette port.
+Second one receives data while there are cycles in the wave that are valid to be decoded.
+
+[http://personal.auna.com/casariche/otla/pilot.png]
+
+
+
+[http://personal.auna.com/casariche/otla/data.png]
+
