@@ -10,6 +10,8 @@ Proyecto O.T.L.A. will make loadings at 12000 bps or even faster using digital a
 
 Project consists on two programms : OtlaPlayer and  OtlaBuilder
 
+How does it work ? ComoFunciona
+
 
 =		Proyecto O.T.L.A. =
 
@@ -18,5 +20,7 @@ EL proyecto OTLA ofrece una alternativa a la obsoleta cinta de cassette para car
 Para la carga de programas se procede como normalmente (load"",etc) pero en lugar de conectar un reproductor de cassette a la vieja computadora se conecta un reproductor de CD, MP3, la tarjeta de sonido de un PC, etc. No se necesita de ningún dispositivo adicional  y la carga será considerable más rápida que las cargas con cassette de la época.
 
 El software consta de dos ejecutables: OtlaPlayer y OtlaBuilder
+
+ComoFunciona
 
 [http://personal.auna.com/casariche/otla/formatos.png]
