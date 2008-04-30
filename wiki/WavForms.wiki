@@ -10,19 +10,19 @@ When you want to experiment with higher speeds it is possible that another form 
 
 *  Square *
 
-It is the natural way to represent the transmission of data by a line audio as did home computers 80 years. Many tools work only with this waveform.
-But when it comes to a prenos real, not ideal wave that "hears" the computer will never be square.
-And especially when you want to convert the sound to an MP3 format gives the square wave dismal results.
+It is the natural way to represent the transmission of data by a audio-line as home computers did in the 80's. Many tools work only with this waveform.
+But in a real transmission ther is not such ideal square wave. 
+And especially when you want to convert the sound to an MP3 format the square wave  gives  dismal results.
 
-(Note: some emulators only work well with the square waveform)
+(Note: some emulators only work well with the square waveform (for instance WinApe for Amstrad CPC))
 
 * Cubic  *
 
-It was constructed using a 3 order polynomial : x(x + P)(xP) where 1/(2P) is the frequency
+It was constructed using a 3 order polynomial : x(x + P)(x - P) where 1/(2P) is the frequency
 
 * Square Root Sine* 
 
-Similar to the previous offer more outstanding in the falling and rising edges. This waveform is used to generate part of the normal load.
+Similar to the previous one but it offers more outstanding in the falling and rising edges. This waveform is used to generate the part of the normal load.
 
 * Saw tooth * 
 
@@ -30,7 +30,7 @@ Better falling edge and smooth rising edge
 
 * Equal energy pulse * 
 
-The square pulses of high frequencies are transmitted with different amplitude dependig on thier frequency. So electrical energy quantum is constant for each pulse.
+The square pulses of high frequencies are transmitted with different amplitude dependig on their frequency. So electrical energy quantum is constant for each pulse.
 Theorical intuition that actually works. 
 
 *Delta * 
