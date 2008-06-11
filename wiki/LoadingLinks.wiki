@@ -14,13 +14,13 @@ Diferentes esquemas de carga desarrollados para el Spectrum
 Ultracargas
 	http://www.speccy.org/spectrumhoy/Indice_del_Manual.htm
 
-Sna2Wav el precursor de k7zx
+ana2wav el precursor de k7zx
 	http://www.speccy.org/cajon/sna2wav.html
 
 Todavía más velocidad de carga utilizando el puerto de joystick
 	http://www.zxprojects.com/index.php/external-ultra-high-loader-for-the-zx-spectrum
 
-MicroWaver, cargas rápidas para msx
+Microwaver, cargas rápidas para msx
 	http://cax.narod.ru/msx/packed/index.html
 
 Una red para msx por el puerto de joystick
