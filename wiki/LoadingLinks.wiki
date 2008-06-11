@@ -14,7 +14,7 @@ Diferentes esquemas de carga desarrollados para el Spectrum
 Ultracargas
 	http://www.speccy.org/spectrumhoy/Indice_del_Manual.htm
 
-ana2wav el precursor de k7zx
+sna2wav el precursor de k7zx
 	http://www.speccy.org/cajon/sna2wav.html
 
 Todavía más velocidad de carga utilizando el puerto de joystick
