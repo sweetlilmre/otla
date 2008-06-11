@@ -1,0 +1,33 @@
+#summary Interesting links
+
+= Interesting Liks =
+
+Links to information about loading 
+
+
+Teoría de la carga de datos desde cassette (para Amstrad CPC pero se aplica a otros sistemas)
+	http://www.cpcwiki.com/index.php/Cassette_data_information
+
+Diferentes esquemas de carga desarrollados para el Spectrum
+	http://newton.sunderland.ac.uk/~specfreak/Schemes/schemes.html
+
+Ultracargas
+	http://www.speccy.org/spectrumhoy/Indice_del_Manual.htm
+
+Sna2Wav el precursor de k7zx
+	http://www.speccy.org/cajon/sna2wav.html
+
+Todavía más velocidad de carga utilizando el puerto de joystick
+	http://www.zxprojects.com/index.php/external-ultra-high-loader-for-the-zx-spectrum
+
+MicroWaver, cargas rápidas para msx
+	http://cax.narod.ru/msx/packed/index.html
+
+Una red para msx por el puerto de joystick
+	http://msxlink.chat.ru/
+
+tap2cd: Cargas rápidas para el Oric (desde 1999!!!)
+	http://oric.ifrance.com/emulateur.html
+
+Video de un cargador musical para zx Spectrum
+	http://www.youtube.com/watch?v=rByIgi65xZk&feature=related
