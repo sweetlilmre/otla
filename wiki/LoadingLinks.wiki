@@ -11,8 +11,9 @@ Teoría de la carga de datos desde cassette (para Amstrad CPC pero se aplica a o
 Diferentes esquemas de carga desarrollados para el Spectrum
 	http://newton.sunderland.ac.uk/~specfreak/Schemes/schemes.html
 
-Hypraloader, la herramienta pionera de la alta velocidad
-	ftp://ftp.nvg.ntnu.no/pub/sinclair/utils/pc/HypraLoader.zip
+Hypraloader y z802tzx,  herramientas pioneras de la alta velocidad
+	ftp://ftp.worldofspectrum.org/pub/sinclair/tools/pc/HypraLoader.zip
+	ftp://ftp.worldofspectrum.org/pub/sinclair/tools/pc/Z802TZXv12.zip
 
 Manual de antiguas ultracargas y wav listos para descargar
 	http://www.speccy.org/spectrumhoy/Indice_del_Manual.htm
