@@ -30,7 +30,7 @@ Microwaver, cargas rápidas para msx
 Una red para msx por el puerto de joystick
 	http://msxlink.chat.ru/
 
-tap2cd: Cargas rápidas para el Oric (desde 1999!!!)
+tap2cd: Cargas rápidas para el Oric (1999)
 	http://oric.ifrance.com/emulateur.html
 
 Video de un cargador musical para zx Spectrum
