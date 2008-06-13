@@ -16,7 +16,7 @@ Hypraloader y z802tzx,  herramientas pioneras de la alta velocidad
 	ftp://ftp.worldofspectrum.org/pub/sinclair/tools/pc/Z802TZXv12.zip
 
 Manual de antiguas ultracargas y wav listos para descargar
-	http://www.speccy.org/spectrumhoy/Indice_del_Manual.htm
+	http://www.speccy.org/spectrumhoy/Juegos.htm
 
 sna2wav el precursor de k7zx
 	http://www.speccy.org/cajon/sna2wav.html
