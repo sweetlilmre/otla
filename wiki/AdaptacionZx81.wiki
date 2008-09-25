@@ -1,0 +1,79 @@
+#Hi-speed loading for zx81
+= Introduction =
+
+El zx81 tiene dos serias limitaciones para usar las cargas de alta velocidad.
+
+-Su escasa memoria RAM.
+-Valocidad de carga stadard muy lenta. (300 bps)
+
+
+= Details =
+
+La rutina de carga OTLA ocupa del orden de 150 bytes.
+
+Para el zx81 se utilizará otra rutina de carga rápida más simple que se pueda ubicar en los 32 bytes del buffer de impresora de zx81 (única zona de memoria donde parece viable)
+
+Esta rutina tiene estas limitaciones.
+ 
+Es más lenta (codifica símbolos de un sólo bit , en lugar de dos). Aun así se conseguirá velocidad notables desde 7350 bps a 16200
+No tiene control de checksum para detectar errores de carga
+Solo carga un bloque de bytes
+
+Código de la rutina de carga
+{{{
+        org   16444
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; inizialiting
+		
+        di
+        out   ($fd),a      ; disable NMI
+        ld    hl, 16514   ; HL= start address for receiving
+        ld    bc, $00fe   ; B= received byte ; C= cassette port
+        ld    de, $f6ef   ; D= value for 0 or 1 bit; E= value for end or transimsion 
+			  ; (values depend on desidered speed transmissión)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; detecting start of transmisión
+         
+pii     inc   b
+        call  cicle        
+        djnz pii
+                  
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;receiving bytes
+              
+full    ld   (hl),b
+        inc  hl
+enter   ld   b, c  
+                             
+more    call  cicle
+        jr    nC, full
+        out   ($ff),a                        
+        cp    e         
+        jr    nc, more   
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;ending
+        out   ($fe),a      ; enable NMI      
+        ei
+        ret  
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;Waiting for a raising edge and measuring the length 
+;of the positive pulse using register A
+;Saving received bit in bit0 of register B
+                   
+cicle
+pi_LOW  in    f,(c)
+        jp    po, pi_LOW
+
+        ld    a,c
+
+pi_HIGH dec   a
+        in    f,(c)
+        jp    pe, pi_HIGH       
+
+        cp    d
+        rl    b
+	ret 
+}}}     
