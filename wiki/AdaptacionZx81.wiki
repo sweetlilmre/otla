@@ -29,7 +29,7 @@ Código de la rutina de carga
         out   ($fd),a      ; disable NMI
         ld    hl, 16514   ; HL= start address for receiving
         ld    bc, $00fe   ; B= received byte ; C= cassette port
-        ld    de, $f6ef   ; D= value for 0 or 1 bit; E= value for end or transimsion 
+        ld    de, $f6ef   ; D= value for detecting 0 or 1; E= value for end of transimsion 
 			  ; (values depend on desidered speed transmissión)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
