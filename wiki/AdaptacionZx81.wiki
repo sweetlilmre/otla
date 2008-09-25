@@ -44,8 +44,7 @@ pii     inc   b
               
 full    ld   (hl),b
         inc  hl
-enter   ld   b, c  
-                             
+enter   ld   b, c                               
 more    call  cicle
         jr    nC, full
         out   ($ff),a                        
@@ -66,13 +65,10 @@ more    call  cicle
 cicle
 pi_LOW  in    f,(c)
         jp    po, pi_LOW
-
         ld    a,c
-
 pi_HIGH dec   a
         in    f,(c)
-        jp    pe, pi_HIGH       
-
+        jp    pe, pi_HIGH 
         cp    d
         rl    b
 	ret 
