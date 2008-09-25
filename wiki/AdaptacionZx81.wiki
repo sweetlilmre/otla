@@ -13,11 +13,11 @@ La rutina de carga OTLA ocupa del orden de 150 bytes.
 
 Para el zx81 se utilizará otra rutina de carga rápida más simple pero que se pueda ubicar en los 32 bytes del buffer de impresora de zx81, PRBUFF=16444 (única zona de memoria donde parece viable)
 
-Esta rutina tiene estas limitaciones:
+Esta rutina tiene estas limitaciones.
  
-Es más lenta (codifica símbolos de un sólo bit , en lugar de dos). Aun así se conseguirá velocidades notables desde 7350 bps a 16200 bps
-No tiene control de checksum para detectar errores de carga
-Solo carga un bloque de bytes
+Es más lenta (codifica símbolos de un sólo bit , en lugar de dos). Aun así se conseguirá velocidades notables desde 7350 bps a 16200 bps.
+No tiene control de checksum para detectar errores de carga.
+Solo carga un bloque de bytes.
 
 Código de la rutina de carga
 {{{
