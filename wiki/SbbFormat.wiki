@@ -10,7 +10,7 @@ A SBB file has one header and blocks of data to be loaded
 
 ||position||field name|| type||comment||
 ||0..2 ||sbb_version|| char(3)||always "SB" + version number (2.1=0x21)|| 
-||3..6 ||machine|| char(4)||ZX , CPC , MSX||
+||3..6 ||machine|| char(4)||ZX , CPC , MSX, 81||
 ||7 ||model|| char ||model 48k, +2A. 464 ...||
 ||8..15 ||extre_info|| char(8)||Ready  For Future Uses||
 ||16..31 || name|| char(16)||name||
@@ -18,8 +18,8 @@ A SBB file has one header and blocks of data to be loaded
 ||25 || origin|| char|| sbb was built from tap, bin , sna ...||
 ||26 || n_blocks|| char||number of blocks ||
 ||26 || poke_ffff|| char||msx pagination (if 0, Poke -1 is not modified)||
-||27..29|| clear || short || clear or SP (if 0, SP is not modified) || 
-||30..31|| n_usr|| short || execution address after loading all bloackd(if 0, it is not an executable ) ||    
+||27..29|| clear || ushort || clear or SP (if 0, SP is not modified) || 
+||30..31|| n_usr|| ushort || execution address after loading all bloackd(if 0, it is not an executable ) ||    
 
 
 ==Block format==
@@ -28,13 +28,13 @@ One of this for each block
 
 ||position||field name|| type||comment||
 ||0..15||blockname|| char (16) || description||
-||16..17||size|| short ||number or bytes for data ||
-||18..19||param3|| short || aux parammter ||
+||16..17||size|| ushort ||number of bytes for data ||
+||18..19||param3|| ushort || aux parammter ||
 ||20||block_type|| char|| type||
 ||21||h_chksum|| char|| checksum for header of block =((ini-1) XOR jump XOR exec)  ||
-||22..23||ini|| short || start memory address for data ||
+||22..23||ini|| ushort || start memory address for data ||
 ||24||jump|| char||  0xC3 or 0xCD for an executable block , 0x01 or oxc9 in other case||
-||25..26||exec|| short || execution address for block. If zero is not an executable block||
+||25..26||exec|| ushort || execution address for block. If zero, it is not an executable block||
 ||27||d_chksum|| char || checksum for data ||
 ||28..size+28||data || char (size) || memory block ||
 
