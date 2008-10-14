@@ -1,6 +1,6 @@
 #summary Otlabuilder is the module that creates sbb files
 
-=  otlaBuiler =
+=  otlaBuilder =
 
 
 The programs that once were stored on cassette tapes, discs 3'' or ROM cartridges can be found today in files that can be downloaded from the Internet.
@@ -25,7 +25,7 @@ This is the string that appears on screen when loading starts. Its maximum lengt
 
 # summary Módulo para construir ficheros sbb
 
-= otlaBuiler =
+= otlaBuilder =
 
 
 Los progrmas que en su día se almacenaban en cintas de cassette, discos de 3" o cartuchos ROMse puden encontrar hoy en día en ficheros que se pueden descargar de internet. 
