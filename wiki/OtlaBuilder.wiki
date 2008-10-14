@@ -1,18 +1,18 @@
-#summary Otlabuilder is a program that creates sbb files
+#summary Otlabuilder is the module that creates sbb files
 
-=  otlaBuiler.exe =
-
-
-The progrmas that once were stored on cassette tapes, discs 3 "or ROM cartridges were found puden today in files that can be downloaded from the Internet.
-
-To load these files into a ZX, CPC, MSX real-OtlaPlayer first have to convert them into a standard format (SbbFormat)
+=  otlaBuiler =
 
 
-# summary Ejecutable para construir ficheros sbb
+The programs that once were stored on cassette tapes, discs 3'' or ROM cartridges can be found today in files that can be downloaded from the Internet.
 
-= otlaBuiler.exe =
+To load these files into a real ZX81 , Spectrum , CPC, MSX with OtlaPlayer first it is necesary to convert them into a standard format (SbbFormat)
 
 
-Los progrmas que en su día se almacenaban en cintas de cassette, discos de 3" o cartuchos rom se puden encontrar hoy en día en ficheros que se pueden descargar de internet. 
+# summary Módulo para construir ficheros sbb
 
-Para cargar estos ficheros en un ZX, CPC, MSX real con OtlaPlayer primero hay que convertirlos a un formato normalizado (SbbFormat)
+= otlaBuiler =
+
+
+Los progrmas que en su día se almacenaban en cintas de cassette, discos de 3" o cartuchos ROMse puden encontrar hoy en día en ficheros que se pueden descargar de internet. 
+
+Para cargar estos ficheros en un ZX81 , Spectrum, CPC, MSX real con OtlaPlayer primero hay que convertirlos a un formato normalizado (SbbFormat)
