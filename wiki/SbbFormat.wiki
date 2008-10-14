@@ -13,7 +13,7 @@ A SBB file has one header and blocks of data to be loaded
 ||3..6 ||machine|| char(4)||ZX , CPC , MSX, 81||
 ||7 ||model|| char ||model 48k, +2A. 464 ...||
 ||8..14 ||extre_info|| char(7)||Ready  For Future Uses||
-||15 ||ei_di|| char||Enable disable iterruost between blocks||
+||15 ||ei_di|| char||Enable disable interrupts between blocks||
 ||16..31 || name|| char(16)||name||
 ||24 || locate|| char||Most Significative Byte for the address of loading rutine||
 ||25 || origin|| char|| sbb was built from tap, bin , sna ...||
