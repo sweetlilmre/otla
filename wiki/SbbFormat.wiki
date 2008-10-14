@@ -12,7 +12,7 @@ A SBB file has one header and blocks of data to be loaded
 ||0..2 ||sbb_version|| char(3)||always "SB" + version number (2.1=0x21)|| 
 ||3..6 ||machine|| char(4)||ZX , CPC , MSX, 81||
 ||7 ||model|| char ||model 48k, +2A. 464 ...||
-||8..14 ||extre_info|| char(8)||Ready  For Future Uses||
+||8..14 ||extre_info|| char(7)||Ready  For Future Uses||
 ||15 ||ei_di|| char||Enable disable iterruost between blocks||
 ||16..31 || name|| char(16)||name||
 ||24 || locate|| char||Most Significative Byte for the address of loading rutine||
