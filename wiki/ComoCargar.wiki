@@ -6,22 +6,23 @@
 Load in practice is very simple
 Only requires a suitable cable and type the correct order in the computer 8bits
 
-For ZX Spectrum and ZX81
+*For ZX Spectrum and ZX81*
 
-typing LOAD "" + enter
-
-
-For MSX
-
-BLOAD typing "CAS", R
+typing `LOAD ""` + enter
 
 
-FOR Amstrad CPC
+*For MSX*
+
+typing  `BLOAD "CAS;", R` + enter
+
+
+*FOR Amstrad CPC*
 
 typing
 
-teclear |TAPE (with a disketera model for it goes to 464)
-typing RUN "
+teclear `|TAPE` + enter (with a disketera model for it goes to 464)
+
+typing `RUN"` + enter
 
 
 = Cargar en la práctica  =
@@ -29,17 +30,18 @@ typing RUN "
 Cargar en la práctica es muy sencillo
 Tan sólo hace falta un cable adecuado y teclear la orden correcta en el computadora 8bits
 
-Para ZX Spectrum y zx81
+*Para ZX Spectrum y zx81*
 
-teclear LOAD""  + enter
-
-
-Para MSX
-
-teclear BLOAD"CAS:",R
+teclear `LOAD""` + enter
 
 
-PARA CPC Amstrad
+*Para MSX*
 
-teclear |TAPE  (para modelo con disketera para 464 no hace falta)
-teclear RUN"
+teclear `BLOAD"CAS:",R` + enter
+
+
+*PARA CPC Amstrad*
+
+teclear `|TAPE` + enter (para modelo con disketera para 464 no hace falta)
+
+teclear `RUN"`+ enter
