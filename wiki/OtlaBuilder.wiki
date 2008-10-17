@@ -23,7 +23,8 @@ This is the string that appears on screen when loading starts. Its maximum lengt
   For CPC and MSX can be given alternative locations giving another value to more significant byte
 
 
-# summary Módulo para construir ficheros sbb
+----
+_Módulo para construir ficheros sbb_
 
 = otlaBuilder =
 
