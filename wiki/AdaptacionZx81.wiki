@@ -53,9 +53,9 @@ more    call  cicle
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;ending
-        out   ($fe),a      ; enable NMI      
-        ei
-        ret  
+                   ; enable NMI      
+        rst   8
+        defb  $ff 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;Waiting for a raising edge and measuring the length 
