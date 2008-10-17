@@ -12,6 +12,9 @@ Project consists on two parts: OtlaPlayer and  OtlaBuilder
 
 How does it work ? ComoFunciona
 
+[http://personal.auna.com/casariche/otla/formatos.png]
+
+----
 
 =		Proyecto O.T.L.A. =
 
@@ -22,5 +25,3 @@ Para la carga de programas se procede como normalmente (load"",etc) pero en luga
 El software consta de dos partes: OtlaPlayer y OtlaBuilder
 
 ComoFunciona
-
-[http://personal.auna.com/casariche/otla/formatos.png]
