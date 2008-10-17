@@ -3,10 +3,8 @@
 =Wave Forms =
 
   OtlaPlayer can generate different waveforms.
-
-The default is to use the waveform cube.
-
-When you want to experiment with higher speeds it is possible that another form of wave function better
+ 
+Cubic waveform cube is defualt. When you want to experiment with higher speeds it is possible that another form of wave can function better
 
 *  Square *
 
@@ -18,7 +16,7 @@ And especially when you want to convert the sound to an MP3 format the square wa
 
 * Cubic  *
 
-It was constructed using a 3 order polynomial : x(x + P)(x - P) where 1/(2P) is the frequency
+It was generated using a 3 order polynomial : x(x + P)(x - P) where 1/(2P) is the frequency
 
 * Square Root Sine* 
 
@@ -37,7 +35,8 @@ Theorical intuition that actually works.
 
 Purely experimental
 
-#summary Distintas formas de onda para cargas a alta velocidad
+----
+_Distintas formas de onda para cargas a alta velocidad_
 
 = Formas de onda=
 
