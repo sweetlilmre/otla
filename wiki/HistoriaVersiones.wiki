@@ -37,3 +37,11 @@
 	Redefine formato .SBB. Se incluye información de reubicación de la rutina de carga y modelo de maquina.
 	Reproductor de wav con control de volumen y seleccion de tarjeta de sonido
 	Mejora en la detección de polaridad de la onda en la rutina de carga para ZX dependiendo de la frecuencia de muestreo
+
+2.2
+  Adaptación para zx81
+  Un solo ejecutable
+  la opción de habilitar/deshabilitar interrupcion va en la cabecera del fichero sbb
+  proceso por lotes para convertir ficheros automáticamente
+  herramienta de ajuste del audio
+  se aumenta un pelín el volumen en el wav
