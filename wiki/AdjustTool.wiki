@@ -42,6 +42,8 @@ If the sampling frequency is not adequate, numbers will have no meaning.
 
 (Not all emulators support the frequencies of 22KHz. Spectaculator Use, Klive .. for Spectrum, WINAP for CPC, OpenMSX for MSX, EightyOne for ZX81
 
+----
+_manual de usuario para el programa de ajuste_
 
 = Ajustar audio (volumen and frecuencia de muestreo)=
 
