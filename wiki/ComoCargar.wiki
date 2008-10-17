@@ -24,6 +24,8 @@ teclear `|TAPE` + enter (with a disketera model for it goes to 464)
 
 typing `RUN"` + enter
 
+----
+_comandos de carga en la maquina d e8 bits_
 
 = Cargar en la práctica  =
 
