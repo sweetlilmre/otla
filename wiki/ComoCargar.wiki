@@ -20,7 +20,7 @@ typing  `BLOAD "CAS:", R` + enter
 
 typing
 
-teclear `|TAPE` + enter (with a disketera model for it goes to 464)
+teclear `|TAPE` + enter (without a diskette (464))
 
 typing `RUN"` + enter
 
@@ -44,6 +44,6 @@ teclear `BLOAD"CAS:",R` + enter
 
 *PARA CPC Amstrad*
 
-teclear `|TAPE` + enter (para modelo con disketera para 464 no hace falta)
+teclear `|TAPE` + enter (para modelo sin disketera para 464 no hace falta)
 
 teclear `RUN"`+ enter
