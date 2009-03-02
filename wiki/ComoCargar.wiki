@@ -13,7 +13,7 @@ typing `LOAD ""` + enter
 
 *For MSX*
 
-typing  `BLOAD "CAS;", R` + enter
+typing  `BLOAD "CAS:", R` + enter
 
 
 *FOR Amstrad CPC*
