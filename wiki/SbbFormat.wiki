@@ -15,12 +15,12 @@ A SBB file has one header and blocks of data to be loaded
 ||8..14 ||extre_info|| char(7)||Ready  For Future Uses||
 ||15 ||ei_di|| char||Enable disable interrupts between blocks||
 ||16..31 || name|| char(16)||name||
-||24 || locate|| char||Most Significative Byte for the address of loading rutine||
-||25 || origin|| char|| sbb was built from tap, bin , sna ...||
-||26 || n_blocks|| char||number of blocks ||
-||27 || poke_ffff|| char||msx pagination (if 0, Poke -1 is not modified)||
-||28..29|| clear || ushort || clear or SP (if 0, SP is not modified) || 
-||30..31|| n_usr|| ushort || execution address after loading all bloacks(if 0, it is not an executable ) ||    
+||32 || locate|| char||Most Significative Byte for the address of loading rutine||
+||33 || origin|| char|| sbb was built from tap, bin , sna ...||
+||34 || n_blocks|| char||number of blocks ||
+||35 || poke_ffff|| char||msx pagination (if 0, Poke -1 is not modified)||
+||36..37|| clear || ushort || clear or SP (if 0, SP is not modified) || 
+||38..39|| n_usr|| ushort || execution address after loading all bloacks(if 0, it is not an executable ) ||    
 
 
 ==Block format==
@@ -37,7 +37,7 @@ One of this for each block
 ||24||jump|| char||  0xC3 or 0xCD for an executable block , 0x01 or oxc9 in other case||
 ||25..26||exec|| ushort || execution address for block. If zero, it is not an executable block||
 ||27||d_chksum|| char || checksum for data ||
-||28..size+28||data || char (size) || memory block ||
+||28..28+size-1||data || char (size) || memory block ||
 
 
 
