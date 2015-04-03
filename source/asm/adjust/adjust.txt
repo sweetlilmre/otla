@@ -1,0 +1,100 @@
+----------------------------------spectrum 48k
+
+11kHz	sync	cont	xM	sM	xm	Sm	min	max
+EMU	38-33		3.8125	8	3.25	5.5	3	4					
+sb
+YAMAHA
+
+
+12kHz	sync	cont	xM	sM	xm	Sm
+EMU	30-34		3.25	9	2.5625	3.5	2	4					
+sb
+YAMAHA
+
+
+22kHz	sync	cont	xM	sM	xm	Sm
+EMU	37-33		.75		.4375		0	1			
+sb
+YAMAHA
+
+
+24kHz	sync	cont	xM	sM	xm	Sm
+EMU	30-34		.5		.25		0	1
+sb
+YAMAHA
+
+----------------------------------spectrum +2A
+11kHz	sync	cont	xM	sM	xm	Sm
+EMU	38-37		3.8125	7.25	3.6875	4.875
+sb
+YAMAHA
+
+
+12kHz	sync	cont	xM	sM	xm	Sm
+EMU	34-33		3.25	6	3.125	3.5
+sb
+YAMAHA
+
+
+22kHz	sync	cont	xM	sM	xm	Sm
+EMU			0,75	7.25	0.6875	6.5
+sb
+YAMAHA
+
+
+24kHz	sync	cont	xM	sM	xm	Sm
+EMU			0.5	8	0.375	7.5
+sb
+YAMAHA
+
+----------------------------------cpc
+11kHz	sync	cont	xM	sM	xm	Sm
+EMU	34		3.4375	7.875	3.4375	7.75
+sb
+YAMAHA
+
+
+12kHz	sync	cont	xM	sM	xm	Sm
+EMU	32-31		3	1.875	2.9375	1
+sb
+YAMAHA
+
+
+22kHz	sync	cont	xM	sM	xm	Sm
+EMU	34		.6875	8	.5625	7.5
+sb
+YAMAHA
+
+
+24kHz	sync	cont	xM	sM	xm	Sm
+EMU	32-31		.375	7.5	.375	6.875
+sb
+YAMAHA
+
+----------------------------------msx
+11kHz	sync	cont	xM	sM	xm	Sm
+EMU	33		3.0625	2.75	3	1
+sb	33		3.124	3.5	2.9875	1
+sb	33		3.25	6	2.9375	2.75
+YAMAHA	33		3.375	10.5	2.75	4.8
+
+
+12kHz	sync	cont	xM	sM	xm	Sm
+EMU	30		2.6875	7.875	2.5625	7.25
+sb	30		2.75	8	2.5	6.875
+sb	30		2.875	8	2.4375	6
+YAMAHA	30		2.875	7.75	2.375	3.5
+
+
+22kHz	sync	cont	xM	sM	xm	Sm
+EMU	33		.375	7.5	.3125	6.875
+sb	33		.5	8	.25	5
+sb	33		.4375	7.8	.3125	6.5
+YAMAHA	33		4.3	200	.8	30
+
+
+24kHz	sync	cont	xM	sM	xm	Sm
+EMU	30		.1875	4.875	0.625	1.875
+sb	30		4		4	0
+sb	30		4.5		3.625
+YAMAHA	30/18-17	0.25	6	0	0
