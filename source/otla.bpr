@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value=".\..\otla.exe"/>
+    <OBJFILES value="inter\otla.obj inter\mainForm.obj inter\InputForm.obj 
+      inter\ModificaForm.obj inter\SettingsForm.obj inter\DirForm.obj 
+      inter\BatchForm.obj inter\AdjustForm.obj inter\wavmonitorForm.obj 
+      inter\AboutForm.obj inter\funciones.obj inter\sbb.obj inter\zxfiles.obj 
+      inter\81files.obj inter\cpcfiles.obj inter\msxfiles.obj inter\loaders.obj 
+      inter\wav2.obj inter\signaltest.obj"/>
+    <RESFILES value="otla.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) mainForm.dfm InputForm.dfm ModificaForm.dfm SettingsForm.dfm 
+      DirForm.dfm BatchForm.dfm AdjustForm.dfm wavmonitorForm.dfm AboutForm.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vclx.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="otla.cpp"/>
+    <INCLUDEPATH value="D:\retro\projects\otla\source;&quot;D:\Archivos de programa\Borland\CBuilder6\Projects&quot;;H:\destel\Locuwin8;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="D:\retro\projects\otla\source;&quot;D:\Archivos de programa\Borland\CBuilder6\Projects&quot;;H:\destel\Locuwin8;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-N2.\inter -N0.\inter -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-I.\inter -D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="otla.res" FORMNAME="" UNITNAME="otla.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="otla.cpp" FORMNAME="" UNITNAME="otla" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mainForm.cpp" FORMNAME="otlaFrm" UNITNAME="mainForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="InputForm.cpp" FORMNAME="InputBlocksDlg" UNITNAME="InputForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ModificaForm.cpp" FORMNAME="ModificaDlg" UNITNAME="ModificaForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SettingsForm.cpp" FORMNAME="SettingsFrm" UNITNAME="SettingsForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DirForm.cpp" FORMNAME="DirFrm" UNITNAME="DirForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BatchForm.cpp" FORMNAME="BatchFrm" UNITNAME="BatchForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AdjustForm.cpp" FORMNAME="AdjustFrm" UNITNAME="AdjustForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="wavmonitorForm.cpp" FORMNAME="MonitorFrm" UNITNAME="wavmonitorForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AboutForm.cpp" FORMNAME="AboutBox" UNITNAME="AboutForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="funciones.cpp" FORMNAME="" UNITNAME="funciones.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sbb.cpp" FORMNAME="" UNITNAME="sbb" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="zxfiles.cpp" FORMNAME="" UNITNAME="zxfiles.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="81files.cpp" FORMNAME="" UNITNAME="81files.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="cpcfiles.cpp" FORMNAME="" UNITNAME="cpcfiles.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="msxfiles.cpp" FORMNAME="" UNITNAME="msxfiles.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="loaders.cpp" FORMNAME="" UNITNAME="loaders" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="wav2.cpp" FORMNAME="" UNITNAME="wav2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="signaltest.cpp" FORMNAME="" UNITNAME="signaltest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=2
+MinorVer=2
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Francisco Systems
+FileDescription=
+FileVersion=2.2.0.0
+InternalName=
+LegalCopyright=Francisco Villa Rodríguez
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=D:\retro\projects\otla\source;D:\Archivos de programa\Borland\CBuilder6\Projects;H:\destel\Locuwin8;$(BCB)\include;$(BCB)\include\vcl
+Item1=D:\Archivos de programa\Borland\CBuilder6\Projects;H:\destel\Locuwin8;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=D:\retro\projects\otla\source;D:\Archivos de programa\Borland\CBuilder6\Projects;H:\destel\Locuwin8;$(BCB)\lib\obj;$(BCB)\lib
+Item1=D:\Archivos de programa\Borland\CBuilder6\Projects;H:\destel\Locuwin8;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=.\inter
+
+[HistoryLists\hlFinalOutputDir]
+Count=3
+Item0=.\..\
+Item1=.\final\
+Item2=.\final
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

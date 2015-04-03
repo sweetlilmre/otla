@@ -1,0 +1,60 @@
+  // versiones de k7zx
+
+    //4.3
+      soporta ficheros .sbb y las cargas especiales de snapshot de los .sbb
+	forma de onda SQR SIN para la primera parte de carga estandard
+
+   
+       //4.2
+         corrige bug bloques tzx con ultimos bytes utiles distintos de 8
+         intento corregir bug polaridad tzx head over heels. (carga SpeedLock)
+
+         
+      //4.1
+        corrige bug al lanzar lame en path con espacios
+
+
+    //4
+        Raudo
+        FiQ , (pwm eliminado)
+        ROM,
+        modificaciones npu . doble polaridad,
+        ultra multi bloques
+        escurrido mas lento . doble polaridad
+        fsk cambio de color 9-14 ==> 8-14
+        Fi nuevas rutinas
+        delta nuevo rutina multi bloque
+        slow nueva rutina más robusta
+
+        algoritmos rapidos rom_min fsk_min fi_min ultra_r npu_r fiq_r  (que no son suficientes)
+
+        metodos ma non tropo
+        metodo normal
+
+        divisor frecuencia, optimizacion estaditica eliminados
+
+        nuevo proceso para convertir carios ficheros. Mp3
+
+        Nueva forma de onda equal energy
+
+
+     //3
+        soporte para snapshot 128k
+        soporte para programas Basic puros
+        fsk , fi, pwm , manchester
+        añadir tono final
+        Divisor de frecuencia
+        acelerar basic
+        ver samples / bit
+
+     //2
+        dos frequencias 44100 48000
+        pokedor
+        distintas formas de onda
+        npu , escurrido
+        convierte varios ficheros
+
+        
+     //1 k7zx
+         milks shavings y delta y ultra
+

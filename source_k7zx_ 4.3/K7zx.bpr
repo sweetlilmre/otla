@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="final\K7zx.exe"/>
+    <OBJFILES value="temp\k7zx.obj temp\about.obj temp\zxfiles.obj temp\ZXCODE.obj 
+      temp\zxwav.obj temp\RUTINAS.obj temp\SettingdForm.obj temp\PlayerForm.obj 
+      temp\DirForm.obj temp\ProressForm.obj temp\textos.obj"/>
+    <RESFILES value="k7zx.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) about.dfm SettingdForm.dfm PlayerForm.dfm DirForm.dfm 
+      ProressForm.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vclx.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="k7zx.cpp"/>
+    <INCLUDEPATH value="&quot;D:\Archivos de programa\Borland\CBuilder6\Projects&quot;;asm;&quot;C:\Archivos de programa\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;."/>
+    <LIBPATH value="&quot;D:\Archivos de programa\Borland\CBuilder6\Projects&quot;;asm;&quot;C:\Archivos de programa\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib;."/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-N2temp -N0temp -$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-Itemp -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="k7zx.res" FORMNAME="" UNITNAME="k7zx.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="k7zx.cpp" FORMNAME="" UNITNAME="k7zx" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="AboutBox" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="zxfiles.cpp" FORMNAME="" UNITNAME="zxfiles" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZXCODE.CPP" FORMNAME="" UNITNAME="zxcode" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="zxwav.cpp" FORMNAME="" UNITNAME="zxwav" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RUTINAS.CPP" FORMNAME="" UNITNAME="rutinas" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SettingdForm.cpp" FORMNAME="SettingsFrm" UNITNAME="SettingdForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PlayerForm.cpp" FORMNAME="PlayerFrm" UNITNAME="PlayerForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DirForm.cpp" FORMNAME="DirFrm" UNITNAME="DirForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ProressForm.cpp" FORMNAME="ProgresoFrm" UNITNAME="ProressForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="textos.cpp" FORMNAME="" UNITNAME="textos" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="versiones.txt" FORMNAME="" UNITNAME="versiones.txt" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=4
+MinorVer=1
+Release=1
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=3082
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=francisco systems
+FileDescription=Kassete virtual para zx Spectrum
+FileVersion=4.1.1.0
+InternalName=
+LegalCopyright=greetware
+LegalTrademarks=Francisco Villa
+OriginalFilename=k7zx.exe
+ProductName=k7zx
+ProductVersion=4.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=6
+Item0=D:\Archivos de programa\Borland\CBuilder6\Projects;asm;C:\Archivos de programa\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;.
+Item1=asm;C:\Archivos de programa\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;.
+Item2=C:\Archivos de programa\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;.
+Item3=$(BCB)\include;$(BCB)\include\vcl;.\
+Item4=D:\proyectos\Builder6\convert;$(BCB)\include;$(BCB)\include\vcl
+Item5=D:\proyectos\Builder6\convert;E:\Archivos de programa\Borland\CBuilder6\Projects;D:\proyectos\Builder6\lab;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=D:\Archivos de programa\Borland\CBuilder6\Projects;asm;C:\Archivos de programa\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;.
+Item1=asm;C:\Archivos de programa\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;.
+Item2=C:\Archivos de programa\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;.
+Item3=$(BCB)\lib\obj;$(BCB)\lib;.\
+Item4=D:\proyectos\Builder6\convert;E:\Archivos de programa\Borland\CBuilder6\Projects;D:\proyectos\Builder6\lab;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=temp
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=final\
+Item1=final
+
+[HistoryLists\hIBPIOutputDir]
+Count=3
+Item0=temp
+Item1=temp\
+Item2=inter
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>
